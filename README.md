@@ -402,9 +402,9 @@ If you use this work in academic research, presentations, or publications, pleas
 
 ## Authors
 
-**MK Rayan**  
-Polymer Science and Engineering  
-University of Southern Mississippi
+**Mostakim Khan Rayan**  
+Electrical & Computer Engineering  
+Vanderbilt University
 
 GitHub: `(https://github.com/NIne-WIngEd/PSE)`
 
