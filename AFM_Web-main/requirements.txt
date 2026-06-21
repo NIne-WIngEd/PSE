@@ -1,0 +1,15 @@
+flask
+flask-cors
+reportlab
+Pillow
+numpy
+torch
+torchvision
+opencv-python
+scikit-image
+scikit-learn
+matplotlib
+pandas
+scipy
+networkx
+# Optional: cupy  # GPU-accelerated numpy (only if you want GPU acceleration for colorwheel)
