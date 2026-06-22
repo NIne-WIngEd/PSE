@@ -1,0 +1,21 @@
+{
+  "evaluation_name": "all_external",
+  "n_images": 52,
+  "n_correct": 47,
+  "accuracy": 0.9038461538461539,
+  "accuracy_95_ci_low_wilson": 0.7939036987986837,
+  "accuracy_95_ci_high_wilson": 0.9582256489474276,
+  "balanced_accuracy": 0.8938311688311689,
+  "macro_precision": 0.9035714285714286,
+  "macro_recall": 0.8938311688311689,
+  "macro_f1": 0.8980836236933798,
+  "weighted_precision": 0.9046703296703296,
+  "weighted_recall": 0.9038461538461539,
+  "weighted_f1": 0.9036451353524525,
+  "matthews_correlation_coefficient": 0.8656755447318041,
+  "cohen_kappa": 0.8652151373768793,
+  "mean_confidence": 0.8861324993463663,
+  "mean_confidence_correct": 0.9089099346323216,
+  "mean_confidence_incorrect": 0.6720246076583862,
+  "expected_calibration_error_10_bins": 0.04547541645857008
+}

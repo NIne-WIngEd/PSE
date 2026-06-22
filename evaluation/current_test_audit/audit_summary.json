@@ -1,0 +1,15 @@
+{
+  "test_dir": "/mnt/data/pse_inspect/PSE-master/AFM_Web-main/test",
+  "total_images": 56,
+  "class_counts": {
+    "dots": 14,
+    "irregular": 5,
+    "lines": 27,
+    "mixed": 10
+  },
+  "images_flagged_as_development_duplicates": 3,
+  "images_smaller_than_217_pixels": 2,
+  "images_with_aspect_ratio_at_least_1_25": 4,
+  "duplicate_candidate_pairs": 0,
+  "important_note": "Automatic checks cannot verify scientific labels or whether color palettes match the training domain. Review label_review_status and color_domain_review manually before freezing the formal test set."
+}

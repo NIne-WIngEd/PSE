@@ -1,0 +1,11 @@
+numpy
+pandas
+Pillow
+torch
+torchvision
+scikit-learn
+scikit-image
+scipy
+matplotlib
+opencv-python
+networkx
