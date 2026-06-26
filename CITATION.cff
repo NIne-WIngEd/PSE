@@ -3,8 +3,10 @@ message: "If you use this software, please cite it using the metadata in this fi
 title: "AFM Morphology Analysis Platform"
 type: software
 authors:
-  - family-names: "Rayan"
-    given-names: "Mostakim Khan"
+  - family-names: "Khan"
+    given-names: "Mostakim"
+  - family-names: "Islam"
+    given-names: "Mohammad Nabil"
 repository-code: "https://github.com/NIne-WIngEd/PSE"
 url: "https://github.com/NIne-WIngEd/PSE"
 license: "AGPL-3.0-or-later"
