@@ -3,8 +3,8 @@ message: "Please cite this software and the associated journal article when usin
 title: "AFM Morphology Analysis Platform"
 type: software
 authors:
-  - family-names: "Khan Rayan"
-    given-names: "Mostakim"
+  - family-names: "Khan"
+    given-names: "MD Mostakim"
     alias: "MK Rayan"
 version: 1.0.0
 date-released: 2026-06-26
