@@ -26,5 +26,6 @@
   },
   "overrides": {
     "postcss": "8.5.10"
-  }
+  },
+  "license": "AGPL-3.0-or-later"
 }

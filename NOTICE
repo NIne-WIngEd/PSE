@@ -1,0 +1,26 @@
+AFM Morphology Analysis Platform
+Copyright (C) 2026 Mostakim Khan Rayan
+
+Repository:
+https://github.com/NIne-WIngEd/PSE
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public
+License for details.
+
+A copy of the GNU Affero General Public License is provided in LICENSE.
+
+Academic and research users are requested to cite the repository and the
+associated software article using CITATION.cff. This citation request does
+not replace or add to the legal conditions of the AGPL.
+
+The repository may include third-party libraries and dependencies governed
+by their own licenses. Original AFM source images are not redistributed.
+Model weights, masks, figures, tables, and derived outputs retain their
+documented provenance and should not be presented under false authorship.

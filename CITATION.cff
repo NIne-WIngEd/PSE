@@ -1,19 +1,25 @@
 cff-version: 1.2.0
-message: "Please cite this software and the associated journal article when using the AFM Morphology Analysis Platform."
+message: "If you use this software, please cite it using the metadata in this file."
 title: "AFM Morphology Analysis Platform"
 type: software
 authors:
-  - family-names: "Khan"
-    given-names: "MD Mostakim"
-    alias: "MK Rayan"
-version: 1.0.0
-date-released: 2026-06-26
-license: MIT
+  - family-names: "Rayan"
+    given-names: "Mostakim Khan"
+repository-code: "https://github.com/NIne-WIngEd/PSE"
+url: "https://github.com/NIne-WIngEd/PSE"
+license: "AGPL-3.0-or-later"
+abstract: >-
+  A browser-based research-software platform for classification,
+  segmentation, morphology-aware routing, Voronoi analysis, ColorWheel
+  orientation analysis, interactive mask correction, batch processing,
+  and PDF reporting for rendered atomic force microscopy images.
 keywords:
   - atomic force microscopy
   - AFM
-  - convolutional neural network
-  - U-Net
+  - morphology classification
   - image segmentation
+  - U-Net
+  - convolutional neural network
   - Voronoi analysis
   - orientation analysis
+  - scientific software

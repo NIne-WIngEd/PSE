@@ -1,5 +1,7 @@
 # AFM Morphology Analysis Platform
 
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE) [![Citation](https://img.shields.io/badge/citation-CITATION.cff-informational.svg)](CITATION.cff)
+
 A reproducible research-software platform for automated analysis of rendered Atomic Force Microscopy (AFM) images. The system combines deep-learning classification and segmentation with morphology-aware routing, Voronoi analysis, ColorWheel orientation analysis, interactive mask correction, batch processing, and PDF report generation.
 
 > **Scope:** This repository evaluates and processes rendered AFM images. It does not operate directly on raw AFM height-data files.
@@ -265,7 +267,7 @@ AFM_Morphology_Analysis_GitHub/
 ├── runtime/                 Generated application outputs; ignored by Git
 ├── CITATION.cff             Citation metadata
 ├── CONTRIBUTING.md          Contribution guidance
-├── LICENSE                  MIT License
+├── LICENSE                  GNU Affero General Public License v3 or later
 ├── FILE_MANIFEST.sha256     Distributed-file integrity manifest
 └── README.md
 ```
@@ -667,15 +669,21 @@ When using this repository in academic work, cite the associated software articl
 
 ---
 
+## Project governance and attribution
+
+- [`LICENSE`](LICENSE): GNU AGPL v3 or later
+- [`NOTICE`](NOTICE): copyright and attribution notice
+- [`CITATION.cff`](CITATION.cff): academic citation metadata
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md): community, research-integrity, and anti-plagiarism policy
+- [`CONTRIBUTING.md`](CONTRIBUTING.md): contribution requirements
+
+---
+
 ## Author
 
 **Mostakim Khan Rayan**  
-Electrical & Computer Engineering  
-Vanderbilt University
-
-**Mohammad Nabil Islam**  
-Polymer Science & Engineering  
-University of Southern Mississippi
+Polymer Science and Engineering  
+The University of Southern Mississippi  
 
 GitHub: [NIne-WIngEd](https://github.com/NIne-WIngEd)  
 Repository: [NIne-WIngEd/PSE](https://github.com/NIne-WIngEd/PSE)
@@ -684,7 +692,7 @@ Repository: [NIne-WIngEd/PSE](https://github.com/NIne-WIngEd/PSE)
 
 ## Acknowledgments
 
-This project was developed as part of an AFM morphology-analysis research workflow at Dr. Boran Ma's research lab. It combines machine learning, scientific image processing, and browser-based software engineering to make AFM analysis more consistent, reviewable, and reproducible.
+This project was developed as part of an AFM morphology-analysis research workflow at The University of Southern Mississippi. It combines machine learning, scientific image processing, and browser-based software engineering to make AFM analysis more consistent, reviewable, and reproducible.
 
 Additional collaborators, laboratory acknowledgments, and funding information should be added to the associated manuscript and repository release where required.
 
@@ -710,6 +718,18 @@ Do not upload restricted or proprietary AFM images to a public issue.
 
 ## License
 
-The source code is released under the MIT License. See [`LICENSE`](LICENSE).
+Unless a file states otherwise, the original source code and documentation in this repository are licensed under the **GNU Affero General Public License, version 3 or later** (`AGPL-3.0-or-later`). See [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
 
-Model weights, derived outputs, and third-party source data may have separate provenance or usage constraints. Users are responsible for confirming that they have permission to use or redistribute their input data.
+In practical terms:
+
+- commercial use is permitted;
+- modified or redistributed versions must remain under the AGPL and include the corresponding source code;
+- a modified version made available to users over a network must offer those users access to its corresponding source code, as required by AGPL section 13;
+- copyright, license, attribution, and modification notices must be preserved;
+- the AGPL does not permit false authorship, plagiarism, or removal of provenance.
+
+Academic citation is requested through [`CITATION.cff`](CITATION.cff). Citation is an important research-integrity expectation, but it is separate from the legal conditions of the AGPL.
+
+Model weights, masks, derived outputs, figures, tables, and third-party components may carry additional provenance or usage considerations. Original AFM source images are not redistributed. Users remain responsible for confirming that they have permission to use and redistribute their own input data and any third-party material.
+
+When deploying a modified network-accessible version of the application, keep a visible link to the corresponding source code available to users.
