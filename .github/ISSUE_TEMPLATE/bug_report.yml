@@ -1,0 +1,116 @@
+name: Bug report
+description: Report a reproducible defect in the application, analysis pipeline, documentation, or evaluation tools.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Do not use this form for security vulnerabilities. Report security issues privately according to `SECURITY.md`.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
+        - label: I am using the latest `main` branch or most recent release.
+          required: true
+        - label: I removed confidential, proprietary, or restricted AFM data from this report.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected component
+      options:
+        - Flask backend
+        - Next.js frontend
+        - CNN classification
+        - U-Net segmentation
+        - Voronoi analysis
+        - ColorWheel analysis
+        - Mask editor
+        - PDF export
+        - Batch processing
+        - Experiment reproduction
+        - Installation or environment
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: Clearly describe what went wrong.
+      placeholder: The application...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the exact commands or user-interface steps.
+      placeholder: |
+        1. Start...
+        2. Upload...
+        3. Click...
+        4. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include versions where available.
+      placeholder: |
+        Operating system:
+        Python version:
+        PyTorch version:
+        Node.js version:
+        npm version:
+        CPU/GPU:
+        Browser:
+        Commit or release:
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or traceback
+      description: Paste relevant text. Remove secrets and private file paths where necessary.
+      render: shell
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Minimal test input
+      description: Describe the input. Do not upload restricted or proprietary AFM images. A synthetic or shareable minimal example is preferred.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context

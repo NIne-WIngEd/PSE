@@ -1,0 +1,70 @@
+name: Feature request
+description: Suggest an improvement to the software, documentation, reproducibility workflow, or user experience.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find the same request.
+          required: true
+        - label: The request does not require redistribution of restricted data.
+          required: true
+        - label: I understand that scientific-method changes require validation evidence.
+          required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Backend
+        - Frontend
+        - Classification
+        - Segmentation
+        - Voronoi
+        - ColorWheel
+        - Mask editor
+        - Reporting
+        - Batch workflow
+        - Reproducibility
+        - Documentation
+        - Packaging or installation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need
+      description: Explain the limitation or workflow problem this feature would address.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior, interface, or implementation you are proposing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation considerations
+      description: Explain how the feature could be tested scientifically or technically.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
