@@ -682,8 +682,12 @@ When using this repository in academic work, cite the associated software articl
 ## Author
 
 **Mostakim Khan Rayan**  
-Polymer Science and Engineering  
-The University of Southern Mississippi  
+Electrical & Computer Engineering  
+Vanderbilt University 
+
+**Mohammad Nabil Islam**  
+Polymer Science & Engineering  
+University of Southern Mississippi 
 
 GitHub: [NIne-WIngEd](https://github.com/NIne-WIngEd)  
 Repository: [NIne-WIngEd/PSE](https://github.com/NIne-WIngEd/PSE)
@@ -692,7 +696,7 @@ Repository: [NIne-WIngEd/PSE](https://github.com/NIne-WIngEd/PSE)
 
 ## Acknowledgments
 
-This project was developed as part of an AFM morphology-analysis research workflow at The University of Southern Mississippi. It combines machine learning, scientific image processing, and browser-based software engineering to make AFM analysis more consistent, reviewable, and reproducible.
+This project was developed as part of an AFM morphology-analysis research workflow at Dr. Boran Ma's research lab. It combines machine learning, scientific image processing, and browser-based software engineering to make AFM analysis more consistent, reviewable, and reproducible.
 
 Additional collaborators, laboratory acknowledgments, and funding information should be added to the associated manuscript and repository release where required.
 
