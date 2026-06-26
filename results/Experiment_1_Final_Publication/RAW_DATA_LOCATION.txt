@@ -1,0 +1,1 @@
+The finalized reviewed prediction CSV and evaluation scripts are stored at repository path experiments/experiment_1/. The supporting_data folder in this package contains the exact 50-image predictions and bootstrap confidence intervals used in the publication tables.

@@ -1,0 +1,1 @@
+Complete raw Experiment 3 timing, audit, and ColorWheel preservation outputs are stored at repository path experiments/experiment_3/raw_results/. They are kept outside this compact publication summary package to avoid duplicating files.

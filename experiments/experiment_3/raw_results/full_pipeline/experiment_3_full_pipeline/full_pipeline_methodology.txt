@@ -1,0 +1,78 @@
+Experiment 3C direct full-pipeline and batch timing
+=====================================================
+
+Images:
+50 images selected from the finalized reviewed manifest.
+
+Complete batch repetitions:
+3
+
+Execution state:
+CNN and U-Net models were loaded once before the experiment and remained loaded
+through all batch repetitions. Model loading was excluded from the warm
+full-pipeline and batch measurements because startup was measured separately in
+Experiment 3A.
+
+Warm-up:
+One discarded complete pass was run for each represented route: dots, lines, mixed, and irregular.
+
+Direct per-image timing scope:
+- output-directory creation;
+- image opening and CNN preprocessing/inference;
+- U-Net preprocessing/inference;
+- resizing and saving the predicted mask;
+- routing by the fresh CNN prediction;
+- Voronoi and/or fixed full-resolution ColorWheel computation;
+- generation and saving of downstream output files.
+
+Excluded:
+- browser/network upload time;
+- manual mask review or editing;
+- PDF export;
+- model/backend startup.
+
+Routing:
+- predicted dots -> Voronoi
+- predicted lines -> ColorWheel
+- predicted mixed -> Voronoi + ColorWheel
+- predicted irregular -> no downstream analysis
+
+Manifest route counts before direct execution:
+{
+  "voronoi": 13,
+  "none": 7,
+  "colorwheel": 21,
+  "voronoi+colorwheel": 9
+}
+
+Voronoi settings:
+- image_size = 1.0
+- threshold_edge = 0.025
+- max_size = 1024
+
+Fixed full-resolution ColorWheel settings:
+- max_dimension = 0 (0 = retain original resolution)
+- orientation_max_dimension = 1024
+- num_clusters = 8
+- max_fit_samples = 10000
+- min_component_size = 15
+- random_state = 42
+
+Timing:
+time.perf_counter() was used. CUDA synchronization was applied when relevant.
+Diagnostic output from Voronoi and ColorWheel was suppressed during measured
+calls so terminal rendering did not inflate computation time.
+
+Device:
+cpu
+
+Batch timing:
+The batch timer began immediately before creation of the batch output directory
+and stopped after the final image's route-specific output files were generated.
+Output deletion occurred only after the timer stopped. The same loaded models
+were reused across all complete batch repetitions.
+
+Interpretation:
+The principal per-image observation is the median direct full-pipeline runtime
+across the complete batch repetitions. The principal batch observation is the
+directly measured total duration of each complete batch run.

@@ -1,0 +1,33 @@
+WINDOWS POWERSHELL COMMANDS
+===========================
+
+1. Copy the package files into your repository root.
+
+2. Delete the incomplete old run:
+
+Remove-Item "evaluation_outputs\experiment_3_downstream" -Recurse -Force -ErrorAction SilentlyContinue
+
+3. Quick setup test:
+
+python experiment_3_downstream_original_timeout.py `
+  --project-dir "." `
+  --test-dir "test" `
+  --manifest "cnn_predictions_primary_reviewed_exp3_49.csv" `
+  --output-dir "evaluation_outputs/experiment_3_downstream_original_49_test" `
+  --device auto `
+  --repeats 1 `
+  --max-images 4 `
+  --colorwheel-timeout-seconds 120
+
+4. Full 49-image run:
+
+python experiment_3_downstream_original_timeout.py `
+  --project-dir "." `
+  --test-dir "test" `
+  --manifest "cnn_predictions_primary_reviewed_exp3_49.csv" `
+  --output-dir "evaluation_outputs/experiment_3_downstream_original_49" `
+  --device auto `
+  --repeats 3 `
+  --max-images 0 `
+  --colorwheel-timeout-seconds 120 `
+  --num-clusters 8

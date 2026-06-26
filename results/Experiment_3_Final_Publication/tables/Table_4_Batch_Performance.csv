@@ -1,0 +1,5 @@
+Batch,Completed images,Failures,Total time (s),Total time (min),Throughput (images/min),Average (s/image),Status
+Batch 1,50/50,0,459.46,7.658,6.529,9.189,completed
+Batch 2,50/50,0,450.637,7.511,6.657,9.013,completed
+Batch 3,50/50,0,450.253,7.504,6.663,9.005,completed
+Aggregate,150/150 runs,0,453.45,7.511,6.657,9.069,3/3 complete; batch CV = 1.15%

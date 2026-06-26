@@ -1,0 +1,13 @@
+batch_repeat,relative_path,true_label,runtime_predicted_label,routing,confidence,second_probability,confidence_margin,confidence_threshold,margin_threshold
+1,irregular/irregular_06.jpeg,irregular,lines,colorwheel,0.5373424887657166,0.4625939428806305,0.07474854588508606,0.6,0.1
+1,mixed/Mixed_01.png,mixed,mixed,voronoi+colorwheel,0.539850115776062,0.2988148331642151,0.24103528261184692,0.6,0.1
+1,mixed/Mixed_03.png,mixed,mixed,voronoi+colorwheel,0.5517905354499817,0.4475152790546417,0.10427525639533997,0.6,0.1
+1,mixed/mixed_05.png,mixed,lines,colorwheel,0.5676323175430298,0.39179691672325134,0.17583540081977844,0.6,0.1
+2,irregular/irregular_06.jpeg,irregular,lines,colorwheel,0.5373424887657166,0.4625939428806305,0.07474854588508606,0.6,0.1
+2,mixed/Mixed_01.png,mixed,mixed,voronoi+colorwheel,0.539850115776062,0.2988148331642151,0.24103528261184692,0.6,0.1
+2,mixed/Mixed_03.png,mixed,mixed,voronoi+colorwheel,0.5517905354499817,0.4475152790546417,0.10427525639533997,0.6,0.1
+2,mixed/mixed_05.png,mixed,lines,colorwheel,0.5676323175430298,0.39179691672325134,0.17583540081977844,0.6,0.1
+3,irregular/irregular_06.jpeg,irregular,lines,colorwheel,0.5373424887657166,0.4625939428806305,0.07474854588508606,0.6,0.1
+3,mixed/Mixed_01.png,mixed,mixed,voronoi+colorwheel,0.539850115776062,0.2988148331642151,0.24103528261184692,0.6,0.1
+3,mixed/Mixed_03.png,mixed,mixed,voronoi+colorwheel,0.5517905354499817,0.4475152790546417,0.10427525639533997,0.6,0.1
+3,mixed/mixed_05.png,mixed,lines,colorwheel,0.5676323175430298,0.39179691672325134,0.17583540081977844,0.6,0.1

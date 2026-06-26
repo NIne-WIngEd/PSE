@@ -1,0 +1,9 @@
+category,value,n_images
+route,voronoi,13
+route,colorwheel,21
+route,voronoi+colorwheel,9
+route,none,7
+predicted_class,dots,13
+predicted_class,lines,21
+predicted_class,mixed,9
+predicted_class,irregular,7

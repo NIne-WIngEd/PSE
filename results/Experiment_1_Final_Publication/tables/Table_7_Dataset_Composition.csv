@@ -1,0 +1,5 @@
+Class,Images,Share (%),Correct predictions,Recall (%)
+Dots,13,26.0,13,100.0
+Irregular,7,14.0,6,85.7
+Lines,20,40.0,18,90.0
+Mixed,10,20.0,8,80.0

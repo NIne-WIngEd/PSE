@@ -1,0 +1,67 @@
+EXPERIMENT 2 — METHODOLOGY BULLETS
+===================================
+
+Dataset and annotation
+• The segmentation evaluation used the same finalized 50-image primary set as Experiment 1.
+• The class distribution was 13 dots, 7 irregular, 20 lines, and 10 mixed images.
+• The original ZIP contained 52 images; dots/dot_12.png and mixed/Mixed_02.png were excluded before final evaluation as development examples.
+• Every evaluated image was paired with one externally verified ground-truth mask and one model-predicted mask.
+• Ground-truth masks were manually prepared and externally verified using Fiji.
+• Foreground pixels were encoded as black = 0 and background pixels as white = 255.
+• All 50 image/ground-truth/predicted triplets had matching dimensions.
+• All 50 ground-truth masks and all 50 predicted masks were exact binary 0/255 images.
+• The model-predicted masks were evaluated at their native image dimensions.
+
+Inference and threshold
+• The finalized U-Net segmentation threshold was fixed at 0.5.
+• The threshold was not tuned or optimized on the final validation set.
+• Predicted masks were not removed or selected according to their final scores.
+• The low-performing Mixed_01 case was retained to report model limitations transparently.
+• Prediction time recorded in the per-image file was secondary; full runtime benchmarking was conducted separately in Experiment 3.
+
+Pixel-level metrics
+• True positives were foreground pixels marked as foreground in both ground truth and prediction.
+• False positives were predicted foreground pixels labeled as background in the ground truth.
+• False negatives were ground-truth foreground pixels missed by the prediction.
+• True negatives were background pixels correctly identified as background.
+• Dice was calculated as 2TP / (2TP + FP + FN).
+• Intersection over Union was calculated as TP / (TP + FP + FN).
+• Pixel precision was calculated as TP / (TP + FP).
+• Pixel recall was calculated as TP / (TP + FN).
+• Specificity was calculated as TN / (TN + FP).
+• Pixel accuracy was calculated as (TP + TN) / (TP + TN + FP + FN).
+• Dice and IoU were treated as the primary overlap metrics.
+• Pixel accuracy and specificity were interpreted as secondary because background pixels can dominate AFM masks.
+
+Aggregation and uncertainty
+• Metrics were calculated separately for every image before summary statistics were computed.
+• Overall means therefore weight each image equally rather than pooling all pixels across the dataset.
+• The overall 95% confidence intervals used image-level class-stratified percentile bootstrap resampling.
+• Class-specific confidence intervals used image-level within-class percentile bootstrap resampling.
+• Both bootstrap analyses used 10,000 resamples and random seed 20260622.
+• The bootstrap confidence intervals describe uncertainty in the mean image-level metric for this fixed validation set.
+
+Representative and extreme cases
+• One representative case per class was selected as the image nearest the class median Dice score.
+• The representative images were dots_09, irregular_03, lines_03, and Mixed_04.
+• The strongest case was lines_08 with Dice = 0.912 and IoU = 0.838.
+• The weakest case was Mixed_01 with Dice = 0.377 and IoU = 0.232.
+• Mixed_01 showed substantial under-segmentation: ground-truth foreground fraction = 0.465 and predicted foreground fraction = 0.137.
+• Disagreement maps encode true-positive foreground in green, false-positive foreground in red, false-negative foreground in blue, and true-negative background in black.
+
+Primary results
+• Mean Dice was 0.845 with 95% bootstrap CI 0.824–0.859.
+• Mean IoU was 0.737 with 95% bootstrap CI 0.714–0.754.
+• Lines achieved the highest mean Dice score at 0.867.
+• Mixed images had the lowest mean Dice score at 0.800 and the greatest variability because of Mixed_01.
+• Mean pixel precision was 0.858.
+• Mean pixel recall was 0.839.
+• Mean specificity was 0.959.
+• Mean pixel accuracy was 0.934.
+
+Reporting limitations
+• Manual ground-truth segmentation remains subject to annotation uncertainty even after external verification.
+• The sample size was modest, especially for irregular images with seven cases.
+• Binary overlap metrics do not directly measure boundary distance, topology, or scientific downstream-analysis error.
+• The severe Mixed_01 outlier materially widens uncertainty for the mixed class and should not be removed post hoc.
+• Results apply to the evaluated rendered AFM images and do not establish performance on all instruments, scan settings, materials, or color-rendering domains.

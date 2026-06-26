@@ -1,0 +1,5 @@
+batch_repeat,relative_path,true_label,runtime_predicted_label,routing,confidence,second_probability,confidence_margin,confidence_threshold,margin_threshold
+1,irregular/irregular_06.jpeg,irregular,lines,colorwheel,0.5373424887657166,0.4625939428806305,0.074748545885086,0.6,0.1
+1,mixed/Mixed_01.png,mixed,mixed,voronoi+colorwheel,0.539850115776062,0.2988148331642151,0.2410352826118469,0.6,0.1
+1,mixed/Mixed_03.png,mixed,mixed,voronoi+colorwheel,0.5517905354499817,0.4475152790546417,0.1042752563953399,0.6,0.1
+1,mixed/mixed_05.png,mixed,lines,colorwheel,0.5676323175430298,0.3917969167232513,0.1758354008197784,0.6,0.1

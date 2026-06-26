@@ -1,0 +1,1 @@
+Complete externally verified manual masks and final model-predicted masks are stored once at repository path masks/. Raw per-image metrics and bootstrap replicate results are stored at experiments/experiment_2/raw_results/.

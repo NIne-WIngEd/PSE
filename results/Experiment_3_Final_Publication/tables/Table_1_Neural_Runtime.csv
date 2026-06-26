@@ -1,0 +1,8 @@
+Measurement,n,Mean (ms),SD (ms),Median (ms),IQR (ms),Range (ms)
+Cold model-ready time,5,4940.61,95.15,4914.22,4902.92–4981.27,4825.49–5079.15
+First CNN inference after cold start,5,105.57,13.13,100.64,99.36–101.89,97.11–128.84
+First U-Net total after cold start,5,329.38,40.16,318.08,301.10–340.94,293.41–393.39
+First combined pipeline after cold start,5,435.02,51.62,418.79,400.52–438.11,395.38–522.32
+Warm CNN per image,50,72.08,9.0,69.41,66.66–75.67,60.46–95.62
+Warm U-Net total per image,50,258.67,11.35,256.18,251.55–264.23,240.52–292.74
+Warm CNN + U-Net pipeline per image,50,332.94,20.53,328.31,317.89–342.39,303.24–392.17

@@ -1,0 +1,60 @@
+EXPERIMENT 3 — METHODOLOGY BULLETS
+===================================
+
+General benchmark setup
+• Runtime testing was performed on Windows 11 build 26200 using an AMD Ryzen AI 9 365 processor with integrated Radeon 880M graphics and 29.84 GB of system memory.
+• The environment used Python 3.13.14 and PyTorch 2.11.0+cpu.
+• CUDA was unavailable; all neural-network inference and downstream analyses ran on the CPU.
+• The finalized reviewed manifest contained 50 AFM images.
+• The classifier routed predicted dots to Voronoi analysis, predicted lines to ColorWheel analysis, predicted mixed images to both modules, and predicted irregular images to no downstream module.
+• High-resolution timing used time.perf_counter().
+• Three repetitions were collected for warm per-image and downstream measurements unless otherwise stated.
+• Per-image medians across repetitions were used before calculating group-level mean, standard deviation, median, interquartile range, and range.
+• One discarded warm-up pass was used before warm-session timing.
+• Diagnostic terminal output was suppressed during timed downstream calls so console rendering did not inflate computation time.
+
+Experiment 3A — neural startup and inference
+• Cold-start testing used five fresh Python processes.
+• Cold model-ready time included dependency imports, analysis-module imports, model construction, weight loading, and device transfer.
+• Interpreter launch overhead was excluded from the cold model-ready measurement and reported separately in the diagnostic fresh-process wall time.
+• First-inference measurements were recorded immediately after model loading and were not included in warm averages.
+• Warm inference used models loaded once in a persistent process.
+• Warm U-Net total time included preprocessing, inference, resizing to the original image dimensions, and PNG mask saving.
+• The warm neural-pipeline measurement included CNN classification plus U-Net segmentation but excluded Voronoi and ColorWheel analysis.
+
+Experiment 3B — downstream modules
+• Predicted U-Net masks were generated before downstream timing; mask-generation time was excluded because neural timing was measured separately in Experiment 3A.
+• Voronoi analysis used threshold_edge = 0.025 and max_size = 1024.
+• The fixed ColorWheel retained full output resolution with max_dimension = 0.
+• ColorWheel orientation estimation used a maximum working dimension of 1024 pixels.
+• ColorWheel clustering used 8 requested clusters, a maximum of 10,000 sampled fitting pixels, a minimum component size of 15 pixels, and random_state = 42.
+• Thirty images were routed to ColorWheel, twenty-two to Voronoi, forty-three to at least one downstream module, and seven to no downstream analysis.
+• All 90 ColorWheel repetitions and all 66 Voronoi repetitions completed without failure.
+• ColorWheel analysis time excluded isolated worker-process startup; worker wall time was reported separately as diagnostic user-visible latency.
+
+Experiment 3C — direct full pipeline and batch timing
+• CNN and U-Net models were loaded once before direct full-pipeline timing and remained loaded across all batch repetitions.
+• The direct complete-pipeline timer included image opening, CNN preprocessing and inference, U-Net preprocessing and inference, predicted-mask resizing and saving, prediction-based routing, downstream analysis, and downstream file generation.
+• The complete 50-image validation set was processed sequentially in three independent warm batch repetitions.
+• Batch timing began immediately before processing the first image and ended after the final image's route-specific outputs were generated.
+• Output-directory deletion occurred only after the batch timer stopped.
+• All 150 image runs and all three complete batches finished successfully.
+• Browser upload, network transfer, backend/model startup, manual mask editing, and PDF export were excluded from the direct warm benchmark.
+
+ColorWheel optimization and preservation audit
+• The original implementation was evaluated with a 120-second safety timeout per repetition.
+• The original ColorWheel completed all repetitions for 7 of 29 routed images; 22 images timed out in every repetition.
+• The fixed full-resolution implementation completed all repetitions for 30 of 30 routed images.
+• Core-output preservation was evaluated on the seven cases that completed under the original implementation.
+• For the controlled comparison, the original and fixed implementations received the same mask and identical orientation origin.
+• Controlled ColorWheel and one-phase outputs were compared using SSIM, mean absolute error, PSNR, and exact-pixel agreement.
+• The controlled one-phase maps achieved SSIM = 1.000, MAE = 0.000, and 100% exact-pixel agreement in all seven cases.
+• Native-output differences were interpreted as expected consequences of the corrected orientation estimator.
+• Exact equivalence was not required for cluster maps because the original code silently hardcoded four clusters whereas the fixed code correctly honored eight requested clusters.
+• Exact equivalence was not required for component maps because the original custom neighborhood search was intentionally replaced by deterministic 8-connected component analysis.
+
+Reporting limitations
+• No manual-versus-software-assisted workflow study was performed.
+• No claim about percentage reduction in human analysis time should be made.
+• Runtime results apply to the tested CPU-only workstation and software configuration.
+• The original ColorWheel median runtime is censored because it is based only on the seven cases that completed within the timeout.

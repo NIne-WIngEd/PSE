@@ -1,0 +1,15 @@
+metric,n,mean,median,minimum,maximum
+completed_cases,7,7,,,
+technical_cases_passed,7,7,,,
+failures_or_timeouts,0,0,,,
+controlled_colorwheel_ssim,7,1.0,1.0,1.0,1.0
+controlled_colorwheel_mae,7,0.0,0.0,0.0,0.0
+controlled_one_phase_ssim,7,1.0,1.0,1.0,1.0
+controlled_one_phase_mae,7,0.0,0.0,0.0,0.0
+controlled_one_phase_exact_pixel_fraction,7,1.0,1.0,1.0,1.0
+axial_orientation_difference_deg,7,69.56633577207961,69.495013990538,47.26128849392784,86.09121921540958
+native_colorwheel_ssim,7,-0.17738204105812844,-0.11194787537226208,-0.48649347404447196,0.1185576897120294
+native_one_phase_ssim,7,0.62720779799637,0.748151501369407,0.28211991946255915,0.952411076696424
+native_one_phase_foreground_mae,7,149.80180210709133,149.05414043121542,115.82765728349484,188.42535704661816
+fixed_components_at_least_15_pixels,7,197.0,143.0,64.0,431.0
+worker_wall_seconds,7,13.606843428578161,3.817664700007299,3.6014231000153814,70.6113891999994

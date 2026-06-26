@@ -1,0 +1,18 @@
+finding,value,unit
+Images in each batch,50.0,images
+Complete batch repetitions,3.0,batches
+Successful batch repetitions,3.0,batches
+Failed image runs,0.0,runs
+Total successful image runs,150.0,runs
+Images matching reviewed manifest predictions,50.0,images
+Mean complete batch time,453.4499458666687,seconds
+Median complete batch time,450.6369016999961,seconds
+Median throughput,6.657244421579126,images/minute
+Mean seconds per image from direct batch,9.068998917333374,seconds/image
+Batch-time CV,1.1486145871167495,%
+Median per-image repeat CV,2.6432089687141813,%
+Median direct full-pipeline time,7819.9057999954675,ms
+Median fixed ColorWheel time,3921.52955000347,ms
+Median Voronoi time,14018.99539999431,ms
+Median warm CNN time,89.86575000017183,ms
+Median warm U-Net total,301.8924000134575,ms

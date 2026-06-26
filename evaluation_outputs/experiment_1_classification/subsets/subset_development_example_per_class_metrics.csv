@@ -1,5 +1,0 @@
-class,support,precision,recall,f1_score,mean_confidence,class_accuracy
-dots,1,1.0,1.0,1.0,0.9834372997283936,1.0
-irregular,0,0.0,0.0,0.0,,
-lines,0,0.0,0.0,0.0,,
-mixed,1,1.0,1.0,1.0,0.9624574780464172,1.0

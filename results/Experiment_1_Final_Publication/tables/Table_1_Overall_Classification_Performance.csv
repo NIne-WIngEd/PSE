@@ -1,0 +1,11 @@
+Metric,Estimate,95% CI lower,95% CI upper,Interval method
+Accuracy,0.9,0.7864,0.9565,95% Wilson interval
+Balanced accuracy,0.8893,0.7804,0.975,"95% class-stratified percentile bootstrap (10,000 resamples; seed 20260622)"
+Macro precision,0.9008,0.8135,0.9773,"95% class-stratified percentile bootstrap (10,000 resamples; seed 20260622)"
+Macro recall,0.8893,0.7804,0.975,"95% class-stratified percentile bootstrap (10,000 resamples; seed 20260622)"
+Macro F1,0.8943,0.7954,0.9747,"95% class-stratified percentile bootstrap (10,000 resamples; seed 20260622)"
+Weighted precision,0.9006,0.8185,0.981,"95% class-stratified percentile bootstrap (10,000 resamples; seed 20260622)"
+Weighted recall,0.9,0.82,0.98,"95% class-stratified percentile bootstrap (10,000 resamples; seed 20260622)"
+Weighted F1,0.8996,0.8123,0.9795,"95% class-stratified percentile bootstrap (10,000 resamples; seed 20260622)"
+Matthews correlation coefficient,0.8594,0.7459,0.9723,"95% class-stratified percentile bootstrap (10,000 resamples; seed 20260622)"
+Cohen's kappa,0.8589,0.7393,0.9717,"95% class-stratified percentile bootstrap (10,000 resamples; seed 20260622)"

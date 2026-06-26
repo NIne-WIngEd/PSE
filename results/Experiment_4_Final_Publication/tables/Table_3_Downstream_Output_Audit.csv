@@ -1,0 +1,7 @@
+Case ID,Executed route,Voronoi status,Voronoi detail,ColorWheel status,ColorWheel detail,Figure-label correction applied
+case_01,voronoi,completed,"Completed, but only original and snapshot PNG outputs were generated; overlay/morphology-map files were not generated.",not_applicable,Not applicable.,Yes
+case_02,colorwheel,not_applicable,Not applicable.,completed,Completed with one_phase_output.png and color_wheel_output.png.,No
+case_03,voronoi+colorwheel,completed,"Completed with original, snapshot, overlay, and morphology-map outputs.",completed,Completed with one_phase_output.png and color_wheel_output.png.,No
+case_04,none,not_applicable,Not applicable.,not_applicable,Not applicable.,No
+case_05,voronoi+colorwheel,completed,"Completed, but only original and snapshot PNG outputs were generated; overlay/morphology-map files were not generated.",completed,Completed with one_phase_output.png and color_wheel_output.png.,Yes
+case_06,none,not_applicable,Not applicable.,not_applicable,Not applicable.,No

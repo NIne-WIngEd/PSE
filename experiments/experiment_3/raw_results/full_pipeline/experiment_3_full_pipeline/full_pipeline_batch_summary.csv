@@ -1,0 +1,2 @@
+measurement,unit,n,mean,standard_deviation,median,q1,q3,minimum,maximum,throughput_per_second_from_median,notes
+Complete validation batch,seconds,3,453.4499458666687,5.20839222349756,450.6369016999961,450.4449226500001,455.04844700000103,450.2529436000041,459.459992300006,,Models remained loaded. Each run processed every selected image sequentially and generated all route-specific output files.

@@ -1,0 +1,14 @@
+EXPERIMENT 1 — SUGGESTED FIGURE CAPTIONS
+========================================
+
+Figure Exp1-1. Confusion matrix for four-class AFM morphology classification on the finalized 50-image validation set. Rows indicate true morphology labels and columns indicate CNN predictions. Forty-five of fifty images were classified correctly.
+
+Figure Exp1-2. Row-normalized confusion matrix for the finalized classification set. Values represent the fraction of each true morphology class assigned to each predicted class. Recall was 1.00 for dots, 0.86 for irregular, 0.90 for lines, and 0.80 for mixed images.
+
+Figure Exp1-3. Per-class precision, recall, and F1 score for dots, irregular, lines, and mixed morphologies. Error bars show 95% image-level class-stratified percentile bootstrap confidence intervals based on 10,000 resamples.
+
+Figure Exp1-4. Distribution of top-class CNN confidence for correct and incorrect predictions. Incorrect cases generally occurred at lower confidence, although one line image was assigned to the irregular class with confidence greater than 0.9999.
+
+Figure Exp1-5. Descriptive reliability diagram comparing mean predicted confidence with observed accuracy in ten equal-width confidence bins. Point labels show the number of images per occupied bin. The diagram should be interpreted cautiously because the validation set contained 50 images.
+
+Figure Exp1-6. The five misclassified images in the finalized validation set. Each panel reports the filename, true-to-predicted class transition, top-class confidence, and probability margin between the two most likely classes.

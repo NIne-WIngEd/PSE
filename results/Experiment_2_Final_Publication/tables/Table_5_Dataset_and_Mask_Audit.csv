@@ -1,0 +1,12 @@
+Audit item,Result,Status,Notes
+Total evaluated images,50,Passed,Same finalized primary image set as Experiment 1.
+Class composition,13 dots; 7 irregular; 20 lines; 10 mixed,Passed,All four morphology classes represented.
+Class labels,Externally verified,Passed,Recorded in the final segmentation manifest.
+Ground-truth masks,Externally verified manual Fiji annotations,Passed,Black foreground = 0; white background = 255.
+Image/ground-truth/prediction dimensions,50/50 matched,Passed,No resizing mismatch in evaluated triplets.
+Ground-truth binary integrity,50/50 exact 0/255,Passed,No grayscale mask values.
+Predicted-mask binary integrity,50/50 exact 0/255,Passed,No grayscale mask values.
+Segmentation threshold,0.5,Fixed,Not optimized on the final validation set.
+Excluded development duplicates,dots/dot_12.png; mixed/Mixed_02.png,Excluded before evaluation,Not included in the 50-image result.
+Outlier retention,mixed/Mixed_01.png retained,Passed,Severe under-segmentation reported transparently.
+Bootstrap protocol,"10,000 resamples; seed 20260622",Passed,Overall bootstrap stratified by class; within-class bootstrap for class summaries.

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this software and the associated journal article when using the AFM Morphology Analysis Platform."
+title: "AFM Morphology Analysis Platform"
+type: software
+authors:
+  - family-names: "Khan Rayan"
+    given-names: "Mostakim"
+    alias: "MK Rayan"
+version: 1.0.0
+date-released: 2026-06-26
+license: MIT
+keywords:
+  - atomic force microscopy
+  - AFM
+  - convolutional neural network
+  - U-Net
+  - image segmentation
+  - Voronoi analysis
+  - orientation analysis

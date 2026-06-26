@@ -1,0 +1,25 @@
+EXPERIMENT 4 CASE-SELECTION RATIONALE
+=====================================
+
+Representative successes
+------------------------
+The dots, lines, mixed, and irregular examples are the images nearest the
+median Dice score within each true morphology class in Experiment 2. They were
+chosen before running Experiment 4 and were not selected for visually favorable
+downstream outputs.
+
+Retained failures
+-----------------
+Mixed_01 is retained because it had the lowest Dice score in the complete
+segmentation validation set. It tests whether a poor predicted mask produces
+technically complete but potentially misleading downstream results.
+
+lines_01 is retained because it was a true line morphology classified as
+irregular with confidence greater than 0.9999. Under the final routing rules,
+that classification suppresses ColorWheel execution. This case demonstrates
+that end-to-end system behavior depends on upstream classification accuracy.
+
+No manual correction
+--------------------
+Experiment 4 does not introduce a corrected mask. This avoids mixing a human
+intervention study into the qualitative software demonstration.

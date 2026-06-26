@@ -1,0 +1,49 @@
+EXPERIMENT 1 — METHODOLOGY BULLETS
+===================================
+
+Dataset and labels
+• The finalized primary classification set contained 50 rendered AFM images.
+• The class distribution was 13 dots, 7 irregular, 20 lines, and 10 mixed images.
+• All 50 rows were retained in the primary evaluation; no incorrect or low-confidence prediction was removed after inference.
+• The finalized set excluded the duplicate development examples dot_12 and Mixed_02.
+• The same 50-image set was subsequently used for Experiment 2, where its class labels were recorded as externally verified.
+• The evaluation subset was recorded as external_validation for all 50 images.
+• Class labels were fixed before calculation of the reported classification metrics.
+
+Model evaluation
+• The production CNN predicted one of four morphology classes: dots, irregular, lines, or mixed.
+• Production preprocessing converted inputs to RGB and resized them to 217 × 217 pixels.
+• Stored top-class predictions, confidence values, class probabilities, and inference times were evaluated from cnn_predictions_primary_reviewed.csv.
+• Class ordering was fixed as dots, irregular, lines, and mixed for confusion matrices and metric calculations.
+• Accuracy was reported together with macro F1 and balanced accuracy because class support was unequal.
+• Per-class precision, recall, specificity, F1 score, support, and predicted count were calculated from one-versus-rest confusion counts.
+• Matthews correlation coefficient and Cohen's kappa were included as class-balance-aware summary measures.
+
+Uncertainty analysis
+• Accuracy received a two-sided 95% Wilson confidence interval.
+• Balanced accuracy, macro metrics, weighted metrics, Matthews correlation coefficient, Cohen's kappa, and per-class metrics received 95% percentile bootstrap confidence intervals.
+• Bootstrap resampling was performed at the image level while preserving the original number of images within each true class.
+• The bootstrap used 10,000 class-stratified resamples and random seed 20260622.
+• Bootstrap intervals describe uncertainty for this fixed validation set and do not establish performance across all AFM acquisition or rendering domains.
+
+Confidence and calibration
+• Prediction confidence was defined as the maximum softmax probability.
+• Correct and incorrect confidence distributions were reported separately.
+• A descriptive reliability diagram used ten equal-width confidence bins.
+• Expected calibration error was calculated from the same bins and equaled 0.0484.
+• Calibration findings should be interpreted cautiously because the validation set contained only 50 images and several bins were sparsely populated.
+• A high-confidence error was retained: lines_01 was predicted as irregular with confidence greater than 0.9999.
+
+Primary results
+• Overall accuracy was 0.900 (45/50 correct).
+• Balanced accuracy was 0.889.
+• Macro F1 was 0.894.
+• Per-class recall was 1.000 for dots, 0.857 for irregular, 0.900 for lines, and 0.800 for mixed.
+• Five images were misclassified and are listed individually in the error-audit table and figure.
+
+Reporting limitations
+• The test set is modest in size and contains unequal class support.
+• The study evaluates rendered AFM images rather than raw AFM height data.
+• Source-group identifiers were not available for every image, so the degree of independence between images from the same specimen or publication cannot be fully quantified.
+• The reliability diagram and expected calibration error are descriptive rather than a definitive calibration study.
+• Experiment 1B color-robustness testing is not included because no finalized Experiment 1B result set was provided.

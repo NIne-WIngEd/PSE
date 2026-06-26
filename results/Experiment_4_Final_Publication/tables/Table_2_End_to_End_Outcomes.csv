@@ -1,0 +1,7 @@
+Case ID,Image,True class,Fresh predicted class,Classification correct,Prediction confidence,Confidence margin,Executed route,Route matches reference,Dice,IoU,Primary interpretation
+case_01,dots/dots_09.png,dots,dots,Yes,0.9994,0.9987,voronoi,Yes,0.8459,0.733,Representative success
+case_02,lines/lines_03.png,lines,lines,Yes,1.0,1.0,colorwheel,Yes,0.862,0.7575,Representative success
+case_03,mixed/Mixed_04.png,mixed,mixed,Yes,0.9343,0.8723,voronoi+colorwheel,Yes,0.8525,0.7429,Representative success
+case_04,irregular/irregular_03.png,irregular,irregular,Yes,0.9444,0.8887,none,Yes,0.859,0.7528,Representative success
+case_05,mixed/Mixed_01.png,mixed,mixed,Yes,0.5399,0.241,voronoi+colorwheel,Yes,0.3766,0.2319,Failure propagation from poor segmentation
+case_06,lines/lines_01.png,lines,irregular,No,1.0,1.0,none,Yes,0.887,0.7969,Failure propagation from classification/routing error

@@ -1,0 +1,20 @@
+EXPERIMENT 4 — FIGURE CAPTIONS
+===============================
+
+Figure Exp4-1. Representative dots workflow. The panel shows the original AFM image, externally verified ground-truth mask, predicted U-Net mask, CNN class probabilities, disagreement map, and the available Voronoi outputs. Because the Voronoi run generated original and snapshot PNG files but not overlay or morphology-map PNG files, the panel labels were corrected accordingly.
+
+Figure Exp4-2. Representative lines workflow. The panel shows successful end-to-end processing for a line morphology, including correct classification, a strong predicted mask, and completed ColorWheel analysis.
+
+Figure Exp4-3. Representative mixed workflow. The panel shows successful end-to-end processing for a mixed morphology, including correct classification, successful segmentation, and execution of both Voronoi and ColorWheel downstream modules.
+
+Figure Exp4-4. Representative irregular workflow. The panel shows correct irregular classification and successful segmentation. As intended by the routing logic, no downstream morphology-specific module is executed.
+
+Figure Exp4-5. Segmentation failure case. Mixed_01 is retained as the lowest-scoring segmentation case. The panel shows that the CNN classified the image as mixed, but the poor predicted mask propagated into both downstream analyses. The Voronoi labels were corrected to match the actual generated files.
+
+Figure Exp4-6. Classification and routing failure case. lines_01 is a true line image that the CNN classified as irregular with extremely high confidence. Because routing depends on the predicted class, the intended ColorWheel analysis was suppressed.
+
+Figure Exp4-7. Representative end-to-end workflows. Four representative successful case-study panels are grouped to show the intended behavior of the full application across dot, line, mixed, and irregular morphologies.
+
+Figure Exp4-8. Failure-propagation case studies. The two retained failure panels demonstrate the two most important end-to-end failure modes: propagation of poor segmentation into downstream analysis and classification-driven routing failure.
+
+Figure Exp4-9. Complete overview of all six Experiment 4 case-study panels. This figure is better suited to supplementary material than the main manuscript because of visual density.

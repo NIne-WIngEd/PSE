@@ -1,0 +1,7 @@
+Metric,Images,Mean,SD,Median,95% CI,Bootstrap method,Iterations,Seed
+Dice,50,0.8452,0.0718,0.8582,0.8245–0.8593,image_level_stratified_percentile,10000,20260622
+IoU,50,0.7369,0.0813,0.7517,0.7139–0.7539,image_level_stratified_percentile,10000,20260622
+Pixel precision,50,0.8581,0.0261,0.861,0.8519–0.8642,image_level_stratified_percentile,10000,20260622
+Pixel recall,50,0.839,0.0892,0.8545,0.8130–0.8557,image_level_stratified_percentile,10000,20260622
+Specificity,50,0.9594,0.0362,0.9676,0.9490–0.9680,image_level_stratified_percentile,10000,20260622
+Pixel accuracy,50,0.934,0.0562,0.9449,0.9186–0.9468,image_level_stratified_percentile,10000,20260622

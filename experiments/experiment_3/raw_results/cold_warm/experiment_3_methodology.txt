@@ -1,0 +1,64 @@
+Experiment 3 cold/warm timing methodology
+==========================================
+
+Project analysis directory:
+<ORIGINAL_RUN_ROOT>\AFM_Web-main
+
+Validation image directory:
+<ORIGINAL_RUN_ROOT>\test
+
+Manifest:
+<ORIGINAL_RUN_ROOT>\cnn_predictions_primary_reviewed.csv
+
+Images timed:
+50
+
+Class distribution:
+{
+  "dots": 13,
+  "irregular": 7,
+  "lines": 20,
+  "mixed": 10
+}
+
+Device request:
+auto
+
+Cold-start runs:
+5
+
+Warm repetitions per image:
+5
+
+Cold-start definition:
+Each cold run was executed in a fresh Python process. The cold model-ready
+measurement starts near the beginning of the worker script and ends after both
+trained models have been imported, constructed, loaded, transferred to the
+selected device, synchronized, and placed in evaluation mode. The first CNN
+and U-Net pass was then measured separately. Fresh-process wall time is retained
+only as a diagnostic because it also includes the first inference and process
+shutdown.
+
+Warm-timing definition:
+Both trained models remained loaded in one Python process. One complete pass
+was run and discarded as a warm-up. Each validation image was then processed
+5 times. The median of those repetitions was treated as that
+image's principal runtime observation.
+
+CNN scope:
+Image opening, RGB conversion, resize to 217 x 217, tensor creation, device
+transfer, forward pass, softmax, and prediction formatting.
+
+U-Net scope:
+Image opening, grayscale conversion, resize to the trained input dimensions,
+tensor creation, device transfer, forward pass, sigmoid/thresholding, resizing
+the mask to the original image dimensions, and PNG saving.
+
+CUDA:
+When CUDA was used, torch.cuda.synchronize() was called around measured GPU
+segments so asynchronous execution did not produce falsely short runtimes.
+
+Important limitation:
+The warm combined-pipeline value covers CNN classification plus U-Net
+segmentation. Voronoi and color-wheel analysis should be timed separately in
+the downstream portion of Experiment 3.

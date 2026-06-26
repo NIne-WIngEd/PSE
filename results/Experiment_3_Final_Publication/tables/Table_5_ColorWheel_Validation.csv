@@ -1,0 +1,8 @@
+Validation measure,Original implementation,Fixed implementation / audit,Interpretation
+Image-level completion,7/29 (24.1%),30/30 (100%),Fixed full-resolution implementation eliminated timeout failures.
+Run-level completion,21/87 successful; 66/87 timed out,90/90 successful; 0 timeouts,Three repetitions per applicable image.
+Median ColorWheel analysis time,36.919 s*,3.518 s,*Original estimate is censored and includes only 7 completed images.
+Controlled one-phase SSIM,Reference,1.000,Identical orientation origin; 7/7 cases.
+Controlled one-phase MAE,Reference,0.000,Zero RGB-intensity error across all controlled comparisons.
+Exact-pixel agreement,Reference,100.0%,Core transform preserved exactly in the controlled comparison.
+Native axial-angle difference,Legacy estimator,Median 69.50°; range 47.26–86.09°,Expected consequence of the corrected orientation estimator.

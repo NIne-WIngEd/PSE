@@ -1,0 +1,42 @@
+EXPERIMENT 3B TECHNICAL EXCLUSION RECORD
+=========================================
+
+Excluded image:
+irregular/irregular_06.jpeg
+
+Important filename correction:
+The interrupted terminal output stopped at irregular_06.jpeg, not
+irregular_05.png.
+
+Reason:
+The original full-resolution ColorWheel did not complete within 15 minutes on
+this 1254 x 1254 predicted mask. The image is a true irregular case but was
+predicted as lines with approximately 0.537 confidence and was therefore routed
+to ColorWheel in the timing workflow.
+
+Scope:
+- Excluded only from Experiment 3B downstream runtime.
+- Retained in Experiment 1 classification evaluation.
+- Retained in Experiment 2 segmentation evaluation.
+- Original app.py and 3.colorwheel.py remain unchanged.
+
+Experiment 3B included sample size:
+49 images.
+
+Predicted-label distribution in the 49-image timing manifest:
+{
+  "dots": 13,
+  "irregular": 7,
+  "lines": 20,
+  "mixed": 9
+}
+
+Reporting requirement:
+The exclusion must be disclosed in the methods/results and should not be
+described as a random or quality-based exclusion. It was a pre-analysis
+technical exclusion prompted by non-termination of the original implementation.
+
+Additional protection:
+The included timing script runs every remaining original ColorWheel job in an
+isolated process with a timeout. Any additional timeout is logged rather than
+silently discarded.

@@ -1,0 +1,2 @@
+module_import_ms,cnn_and_unet_model_load_ms,device,reporting_note
+4641.183799991268,621.9940000009956,cpu,One-time warm-session setup; excluded from direct warm pipeline and batch measurements.

@@ -1,0 +1,10 @@
+Figure,File PNG,File PDF,Description,Use
+Figure Exp4-1,Figure_Exp4_1_Case_case_01.png,Figure_Exp4_1_Case_case_01.pdf,Representative dots workflow,Individual case panel
+Figure Exp4-2,Figure_Exp4_2_Case_case_02.png,Figure_Exp4_2_Case_case_02.pdf,Representative lines workflow,Individual case panel
+Figure Exp4-3,Figure_Exp4_3_Case_case_03.png,Figure_Exp4_3_Case_case_03.pdf,Representative mixed workflow,Individual case panel
+Figure Exp4-4,Figure_Exp4_4_Case_case_04.png,Figure_Exp4_4_Case_case_04.pdf,Representative irregular workflow,Individual case panel
+Figure Exp4-5,Figure_Exp4_5_Case_case_05.png,Figure_Exp4_5_Case_case_05.pdf,Segmentation failure case,Individual case panel
+Figure Exp4-6,Figure_Exp4_6_Case_case_06.png,Figure_Exp4_6_Case_case_06.pdf,Classification and routing failure case,Individual case panel
+Figure Exp4-7,Figure_Exp4_7_Representative_Workflows.png,Figure_Exp4_7_Representative_Workflows.pdf,Four representative successful workflows.,Recommended main manuscript figure
+Figure Exp4-8,Figure_Exp4_8_Failure_Propagation_Cases.png,Figure_Exp4_8_Failure_Propagation_Cases.pdf,Segmentation and classification/routing failure cases.,Recommended main manuscript figure
+Figure Exp4-9,Figure_Exp4_9_All_Cases_Overview.png,Figure_Exp4_9_All_Cases_Overview.pdf,Complete overview of all six case-study panels.,Supplementary figure

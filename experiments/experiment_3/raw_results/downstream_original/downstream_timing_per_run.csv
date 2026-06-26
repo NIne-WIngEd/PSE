@@ -1,0 +1,134 @@
+relative_path,true_label,predicted_label,confidence,routing,repeat,voronoi_ms,voronoi_status,colorwheel_analysis_ms,colorwheel_worker_wall_ms,colorwheel_status,downstream_total_ms,overall_status
+dots/dot_01.png,dots,dots,0.9996912479400635,voronoi,1,14933.571500001563,completed,,,not_applicable,14933.571500001563,completed
+dots/dot_01.png,dots,dots,0.9996912479400635,voronoi,2,14624.23040000067,completed,,,not_applicable,14624.23040000067,completed
+dots/dot_01.png,dots,dots,0.9996912479400635,voronoi,3,14261.258500002441,completed,,,not_applicable,14261.258500002441,completed
+dots/dots_02.png,dots,dots,0.781582236289978,voronoi,1,21043.579299999692,completed,,,not_applicable,21043.579299999692,completed
+dots/dots_02.png,dots,dots,0.781582236289978,voronoi,2,21230.840800002625,completed,,,not_applicable,21230.840800002625,completed
+dots/dots_02.png,dots,dots,0.781582236289978,voronoi,3,21582.93390000108,completed,,,not_applicable,21582.93390000108,completed
+dots/dots_03.png,dots,dots,0.9978141784667969,voronoi,1,17898.134400002164,completed,,,not_applicable,17898.134400002164,completed
+dots/dots_03.png,dots,dots,0.9978141784667969,voronoi,2,17718.498300000647,completed,,,not_applicable,17718.498300000647,completed
+dots/dots_03.png,dots,dots,0.9978141784667969,voronoi,3,17580.72700000048,completed,,,not_applicable,17580.72700000048,completed
+dots/dots_04.png,dots,dots,0.9998832941055298,voronoi,1,11275.133700000879,completed,,,not_applicable,11275.133700000879,completed
+dots/dots_04.png,dots,dots,0.9998832941055298,voronoi,2,11033.862899999804,completed,,,not_applicable,11033.862899999804,completed
+dots/dots_04.png,dots,dots,0.9998832941055298,voronoi,3,11800.065900002664,completed,,,not_applicable,11800.065900002664,completed
+dots/dots_05.png,dots,dots,0.699499249458313,voronoi,1,18051.151499999833,completed,,,not_applicable,18051.151499999833,completed
+dots/dots_05.png,dots,dots,0.699499249458313,voronoi,2,18995.331800000713,completed,,,not_applicable,18995.331800000713,completed
+dots/dots_05.png,dots,dots,0.699499249458313,voronoi,3,18664.150399999926,completed,,,not_applicable,18664.150399999926,completed
+dots/dots_06.png,dots,dots,0.9997362494468689,voronoi,1,17499.679299999116,completed,,,not_applicable,17499.679299999116,completed
+dots/dots_06.png,dots,dots,0.9997362494468689,voronoi,2,16100.36879999825,completed,,,not_applicable,16100.36879999825,completed
+dots/dots_06.png,dots,dots,0.9997362494468689,voronoi,3,14455.731199999718,completed,,,not_applicable,14455.731199999718,completed
+dots/dots_07.png,dots,dots,0.7031892538070679,voronoi,1,15905.90549999979,completed,,,not_applicable,15905.90549999979,completed
+dots/dots_07.png,dots,dots,0.7031892538070679,voronoi,2,16123.410200001672,completed,,,not_applicable,16123.410200001672,completed
+dots/dots_07.png,dots,dots,0.7031892538070679,voronoi,3,15814.885399999184,completed,,,not_applicable,15814.885399999184,completed
+dots/dots_08.png,dots,dots,0.9980535507202148,voronoi,1,14703.239299997222,completed,,,not_applicable,14703.239299997222,completed
+dots/dots_08.png,dots,dots,0.9980535507202148,voronoi,2,14843.896500002302,completed,,,not_applicable,14843.896500002302,completed
+dots/dots_08.png,dots,dots,0.9980535507202148,voronoi,3,15199.768499998754,completed,,,not_applicable,15199.768499998754,completed
+dots/dots_09.png,dots,dots,0.9993627667427063,voronoi,1,18890.41089999955,completed,,,not_applicable,18890.41089999955,completed
+dots/dots_09.png,dots,dots,0.9993627667427063,voronoi,2,17450.337799997214,completed,,,not_applicable,17450.337799997214,completed
+dots/dots_09.png,dots,dots,0.9993627667427063,voronoi,3,17586.770900001284,completed,,,not_applicable,17586.770900001284,completed
+dots/dots_10.png,dots,dots,0.9971987009048462,voronoi,1,13533.964800000831,completed,,,not_applicable,13533.964800000831,completed
+dots/dots_10.png,dots,dots,0.9971987009048462,voronoi,2,13530.840699997498,completed,,,not_applicable,13530.840699997498,completed
+dots/dots_10.png,dots,dots,0.9971987009048462,voronoi,3,14429.322600000887,completed,,,not_applicable,14429.322600000887,completed
+dots/dots_11.png,dots,dots,0.9937454462051392,voronoi,1,11874.073200000566,completed,,,not_applicable,11874.073200000566,completed
+dots/dots_11.png,dots,dots,0.9937454462051392,voronoi,2,11295.970500003023,completed,,,not_applicable,11295.970500003023,completed
+dots/dots_11.png,dots,dots,0.9937454462051392,voronoi,3,11441.582899999048,completed,,,not_applicable,11441.582899999048,completed
+dots/dots_13.png,dots,dots,0.6638205647468567,voronoi,1,8501.175299999886,completed,,,not_applicable,8501.175299999886,completed
+dots/dots_13.png,dots,dots,0.6638205647468567,voronoi,2,8447.029200000543,completed,,,not_applicable,8447.029200000543,completed
+dots/dots_13.png,dots,dots,0.6638205647468567,voronoi,3,8564.526400001341,completed,,,not_applicable,8564.526400001341,completed
+dots/dots_14.png,dots,dots,0.6761580109596252,voronoi,1,8909.494299998187,completed,,,not_applicable,8909.494299998187,completed
+dots/dots_14.png,dots,dots,0.6761580109596252,voronoi,2,9024.417900000117,completed,,,not_applicable,9024.417900000117,completed
+dots/dots_14.png,dots,dots,0.6761580109596252,voronoi,3,8595.697000000655,completed,,,not_applicable,8595.697000000655,completed
+irregular/irregular_01.png,irregular,irregular,0.6082426905632019,none,0,,not_applicable,,,not_applicable,0.0,completed_no_downstream
+irregular/irregular_02.png,irregular,irregular,0.8662452101707458,none,0,,not_applicable,,,not_applicable,0.0,completed_no_downstream
+irregular/irregular_03.png,irregular,irregular,0.9443580508232117,none,0,,not_applicable,,,not_applicable,0.0,completed_no_downstream
+irregular/irregular_04.png,irregular,irregular,0.8417518734931946,none,0,,not_applicable,,,not_applicable,0.0,completed_no_downstream
+irregular/irregular_05.png,irregular,irregular,0.6816096901893616,none,0,,not_applicable,,,not_applicable,0.0,completed_no_downstream
+irregular/irregular_07.png,irregular,irregular,0.9995558857917786,none,0,,not_applicable,,,not_applicable,0.0,completed_no_downstream
+lines/lines_01.png,lines,irregular,0.9999997615814209,none,0,,not_applicable,,,not_applicable,0.0,completed_no_downstream
+lines/lines_02.png,lines,lines,0.9999152421951294,colorwheel,1,,not_applicable,,120122.39110000155,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_02.png,lines,lines,0.9999152421951294,colorwheel,2,,not_applicable,,120104.71120000147,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_02.png,lines,lines,0.9999152421951294,colorwheel,3,,not_applicable,,120094.78849999869,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_03.png,lines,lines,0.9999998807907104,colorwheel,1,,not_applicable,,120081.98020000054,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_03.png,lines,lines,0.9999998807907104,colorwheel,2,,not_applicable,,120084.74500000011,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_03.png,lines,lines,0.9999998807907104,colorwheel,3,,not_applicable,,120088.3548999991,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_04.png,lines,lines,0.9993066787719727,colorwheel,1,,not_applicable,,120085.41460000197,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_04.png,lines,lines,0.9993066787719727,colorwheel,2,,not_applicable,,120088.64389999871,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_04.png,lines,lines,0.9993066787719727,colorwheel,3,,not_applicable,,120092.64070000063,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_05.png,lines,lines,0.9995525479316711,colorwheel,1,,not_applicable,,120099.2746999982,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_05.png,lines,lines,0.9995525479316711,colorwheel,2,,not_applicable,,120322.0982999992,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_05.png,lines,lines,0.9995525479316711,colorwheel,3,,not_applicable,,120101.96050000013,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_06.png,lines,lines,0.9918842315673828,colorwheel,1,,not_applicable,,120116.7394999975,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_06.png,lines,lines,0.9918842315673828,colorwheel,2,,not_applicable,,120078.79680000042,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_06.png,lines,lines,0.9918842315673828,colorwheel,3,,not_applicable,,120092.45429999646,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_07.png,lines,lines,0.985153317451477,colorwheel,1,,not_applicable,,120077.98999999795,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_07.png,lines,lines,0.985153317451477,colorwheel,2,,not_applicable,,120086.38460000293,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_07.png,lines,lines,0.985153317451477,colorwheel,3,,not_applicable,,120087.71060000072,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_08.png,lines,lines,0.9986419081687927,colorwheel,1,,not_applicable,,120093.36330000224,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_08.png,lines,lines,0.9986419081687927,colorwheel,2,,not_applicable,,120095.01520000049,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_08.png,lines,lines,0.9986419081687927,colorwheel,3,,not_applicable,,120093.10410000035,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_09.png,lines,lines,0.7682480216026306,colorwheel,1,,not_applicable,,120091.80249999918,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_09.png,lines,lines,0.7682480216026306,colorwheel,2,,not_applicable,,120076.85649999985,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_09.png,lines,lines,0.7682480216026306,colorwheel,3,,not_applicable,,120102.42010000002,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_10.png,lines,lines,0.9997170567512512,colorwheel,1,,not_applicable,,120082.26789999753,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_10.png,lines,lines,0.9997170567512512,colorwheel,2,,not_applicable,,120093.66420000151,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_10.png,lines,lines,0.9997170567512512,colorwheel,3,,not_applicable,,120080.32040000035,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_11.png,lines,lines,0.9998757839202881,colorwheel,1,,not_applicable,,120086.57469999889,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_11.png,lines,lines,0.9998757839202881,colorwheel,2,,not_applicable,,120089.79340000224,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_11.png,lines,lines,0.9998757839202881,colorwheel,3,,not_applicable,,120086.06100000179,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_12.png,lines,lines,0.9999990463256836,colorwheel,1,,not_applicable,96449.01799999934,99418.89179999998,completed,96449.01799999934,completed
+lines/lines_12.png,lines,lines,0.9999990463256836,colorwheel,2,,not_applicable,97261.95730000109,99959.88359999683,completed,97261.95730000109,completed
+lines/lines_12.png,lines,lines,0.9999990463256836,colorwheel,3,,not_applicable,98136.93870000134,101043.2553999999,completed,98136.93870000134,completed
+lines/lines_13.png,lines,lines,0.9999980926513672,colorwheel,1,,not_applicable,99759.0209000009,103126.34479999906,completed,99759.0209000009,completed
+lines/lines_13.png,lines,lines,0.9999980926513672,colorwheel,2,,not_applicable,98922.8428000024,101929.59979999796,completed,98922.8428000024,completed
+lines/lines_13.png,lines,lines,0.9999980926513672,colorwheel,3,,not_applicable,99323.52190000165,102295.70550000062,completed,99323.52190000165,completed
+lines/lines_14.png,lines,lines,0.9999998807907104,colorwheel,1,,not_applicable,100544.83310000069,103610.59440000099,completed,100544.83310000069,completed
+lines/lines_14.png,lines,lines,0.9999998807907104,colorwheel,2,,not_applicable,104757.99619999816,107821.12770000094,completed,104757.99619999816,completed
+lines/lines_14.png,lines,lines,0.9999998807907104,colorwheel,3,,not_applicable,99672.61689999941,102726.28749999785,completed,99672.61689999941,completed
+lines/lines_15.png,lines,lines,0.9979233741760254,colorwheel,1,,not_applicable,36979.69169999851,40112.783799999306,completed,36979.69169999851,completed
+lines/lines_15.png,lines,lines,0.9979233741760254,colorwheel,2,,not_applicable,36918.79870000048,39844.08640000038,completed,36918.79870000048,completed
+lines/lines_15.png,lines,lines,0.9979233741760254,colorwheel,3,,not_applicable,36852.00299999997,39706.38230000259,completed,36852.00299999997,completed
+lines/lines_16.png,lines,lines,0.9999986886978149,colorwheel,1,,not_applicable,29775.8997000019,32657.58260000075,completed,29775.8997000019,completed
+lines/lines_16.png,lines,lines,0.9999986886978149,colorwheel,2,,not_applicable,30337.473200001114,33232.76429999896,completed,30337.473200001114,completed
+lines/lines_16.png,lines,lines,0.9999986886978149,colorwheel,3,,not_applicable,30140.698999999586,32970.063700002356,completed,30140.698999999586,completed
+lines/lines_17.png,lines,lines,0.9999960660934448,colorwheel,1,,not_applicable,,120083.36050000071,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_17.png,lines,lines,0.9999960660934448,colorwheel,2,,not_applicable,,120089.19930000047,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_17.png,lines,lines,0.9999960660934448,colorwheel,3,,not_applicable,,120081.26479999919,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_18.png,lines,mixed,0.6146520376205444,voronoi+colorwheel,1,7433.959699999832,completed,,120083.67269999871,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,7433.959699999832,partial_or_failed
+lines/lines_18.png,lines,mixed,0.6146520376205444,voronoi+colorwheel,2,7320.937100001174,completed,,120091.36610000132,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,7320.937100001174,partial_or_failed
+lines/lines_18.png,lines,mixed,0.6146520376205444,voronoi+colorwheel,3,7510.763099999167,completed,,120096.5922999967,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,7510.763099999167,partial_or_failed
+lines/lines_19.png,lines,lines,0.9978190660476685,colorwheel,1,,not_applicable,,120091.2868000014,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_19.png,lines,lines,0.9978190660476685,colorwheel,2,,not_applicable,,120085.66710000014,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_19.png,lines,lines,0.9978190660476685,colorwheel,3,,not_applicable,,120078.17259999865,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_20.png,lines,lines,0.9723218083381653,colorwheel,1,,not_applicable,,120092.75979999802,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_20.png,lines,lines,0.9723218083381653,colorwheel,2,,not_applicable,,120080.66739999776,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+lines/lines_20.png,lines,lines,0.9723218083381653,colorwheel,3,,not_applicable,,120098.86589999951,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+mixed/Mixed_01.png,mixed,mixed,0.539850115776062,voronoi+colorwheel,1,13350.274399999762,completed,,120087.64079999673,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,13350.274399999762,partial_or_failed
+mixed/Mixed_01.png,mixed,mixed,0.539850115776062,voronoi+colorwheel,2,13090.628499998274,completed,,120088.20879999985,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,13090.628499998274,partial_or_failed
+mixed/Mixed_01.png,mixed,mixed,0.539850115776062,voronoi+colorwheel,3,13223.800600000686,completed,,120092.18260000125,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,13223.800600000686,partial_or_failed
+mixed/Mixed_03.png,mixed,mixed,0.5517905354499817,voronoi+colorwheel,1,2590.080999998463,completed,22977.750000001834,25775.603400001273,completed,25567.831000000297,completed
+mixed/Mixed_03.png,mixed,mixed,0.5517905354499817,voronoi+colorwheel,2,2757.903699999588,completed,22603.355199997168,25410.940100002335,completed,25361.258899996756,completed
+mixed/Mixed_03.png,mixed,mixed,0.5517905354499817,voronoi+colorwheel,3,2689.5781999992323,completed,22589.747300000454,25315.69070000114,completed,25279.325499999686,completed
+mixed/Mixed_04.png,mixed,mixed,0.9343376755714417,voronoi+colorwheel,1,6690.970100000413,completed,24805.508000001282,27542.01230000035,completed,31496.478100001696,completed
+mixed/Mixed_04.png,mixed,mixed,0.9343376755714417,voronoi+colorwheel,2,6431.229899997561,completed,25327.054500001395,28075.963899998897,completed,31758.284399998956,completed
+mixed/Mixed_04.png,mixed,mixed,0.9343376755714417,voronoi+colorwheel,3,5870.98380000316,completed,24918.212899996433,27641.22100000168,completed,30789.196699999593,completed
+mixed/mixed_05.png,mixed,lines,0.5676323175430298,colorwheel,1,,not_applicable,,120084.73610000146,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+mixed/mixed_05.png,mixed,lines,0.5676323175430298,colorwheel,2,,not_applicable,,120084.67100000053,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+mixed/mixed_05.png,mixed,lines,0.5676323175430298,colorwheel,3,,not_applicable,,120119.16829999973,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+mixed/mixed_06.jpeg,mixed,mixed,0.901093065738678,voronoi+colorwheel,1,26537.207299999864,completed,,120081.55790000092,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,26537.207299999864,partial_or_failed
+mixed/mixed_06.jpeg,mixed,mixed,0.901093065738678,voronoi+colorwheel,2,26554.00560000271,completed,,120089.51319999687,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,26554.00560000271,partial_or_failed
+mixed/mixed_06.jpeg,mixed,mixed,0.901093065738678,voronoi+colorwheel,3,26218.502899999294,completed,,120084.29329999854,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,26218.502899999294,partial_or_failed
+mixed/mixed_07.png,mixed,lines,0.6404964327812195,colorwheel,1,,not_applicable,,120096.75099999731,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+mixed/mixed_07.png,mixed,lines,0.6404964327812195,colorwheel,2,,not_applicable,,120090.99690000221,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+mixed/mixed_07.png,mixed,lines,0.6404964327812195,colorwheel,3,,not_applicable,,120080.08490000066,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,0.0,partial_or_failed
+mixed/mixed_08.jpeg,mixed,mixed,0.8115888833999634,voronoi+colorwheel,1,16613.23210000046,completed,,120086.27820000038,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,16613.23210000046,partial_or_failed
+mixed/mixed_08.jpeg,mixed,mixed,0.8115888833999634,voronoi+colorwheel,2,17251.467300000513,completed,,120097.5451000013,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,17251.467300000513,partial_or_failed
+mixed/mixed_08.jpeg,mixed,mixed,0.8115888833999634,voronoi+colorwheel,3,17217.09270000065,completed,,120083.06459999949,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,17217.09270000065,partial_or_failed
+mixed/mixed_09.png,mixed,mixed,0.9798629879951477,voronoi+colorwheel,1,12738.835999996809,completed,,120074.8496999986,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,12738.835999996809,partial_or_failed
+mixed/mixed_09.png,mixed,mixed,0.9798629879951477,voronoi+colorwheel,2,12750.343499999872,completed,,120083.77130000008,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,12750.343499999872,partial_or_failed
+mixed/mixed_09.png,mixed,mixed,0.9798629879951477,voronoi+colorwheel,3,12638.172199996916,completed,,120071.80040000094,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,12638.172199996916,partial_or_failed
+mixed/mixed_10.png,mixed,mixed,0.9174965620040894,voronoi+colorwheel,1,9317.322400002013,completed,,120090.38169999985,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,9317.322400002013,partial_or_failed
+mixed/mixed_10.png,mixed,mixed,0.9174965620040894,voronoi+colorwheel,2,9198.311199997988,completed,,120080.37730000069,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,9198.311199997988,partial_or_failed
+mixed/mixed_10.png,mixed,mixed,0.9174965620040894,voronoi+colorwheel,3,9643.021100000624,completed,,120086.36259999912,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,9643.021100000624,partial_or_failed
+mixed/mixed_11.png,mixed,mixed,0.9750034809112549,voronoi+colorwheel,1,13910.864299999957,completed,,120090.80769999855,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,13910.864299999957,partial_or_failed
+mixed/mixed_11.png,mixed,mixed,0.9750034809112549,voronoi+colorwheel,2,14075.457700000698,completed,,120097.62740000224,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,14075.457700000698,partial_or_failed
+mixed/mixed_11.png,mixed,mixed,0.9750034809112549,voronoi+colorwheel,3,13849.518800001533,completed,,120094.70449999935,timeout: TimeoutExpired: Original ColorWheel exceeded 120.0 seconds.,13849.518800001533,partial_or_failed

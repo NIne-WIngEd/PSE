@@ -1,0 +1,25 @@
+Class,Metric,Images,Mean,SD,Median,95% CI,Bootstrap method
+Dots,Dice,13,0.8414,0.0283,0.8459,0.8259–0.8552,image_level_within_class_percentile
+Dots,IoU,13,0.7271,0.0415,0.733,0.7047–0.7475,image_level_within_class_percentile
+Dots,Pixel precision,13,0.8398,0.0283,0.845,0.8247–0.8541,image_level_within_class_percentile
+Dots,Pixel recall,13,0.8432,0.0316,0.8534,0.8252–0.8584,image_level_within_class_percentile
+Dots,Specificity,13,0.9539,0.0231,0.9585,0.9414–0.9655,image_level_within_class_percentile
+Dots,Pixel accuracy,13,0.9309,0.0303,0.9374,0.9145–0.9462,image_level_within_class_percentile
+Irregular,Dice,7,0.8555,0.0148,0.859,0.8453–0.8652,image_level_within_class_percentile
+Irregular,IoU,7,0.7478,0.0225,0.7528,0.7320–0.7626,image_level_within_class_percentile
+Irregular,Pixel precision,7,0.861,0.0149,0.862,0.8513–0.8713,image_level_within_class_percentile
+Irregular,Pixel recall,7,0.8501,0.0156,0.856,0.8391–0.8601,image_level_within_class_percentile
+Irregular,Specificity,7,0.9443,0.0775,0.9764,0.8844–0.9779,image_level_within_class_percentile
+Irregular,Pixel accuracy,7,0.9324,0.0587,0.9587,0.8871–0.9607,image_level_within_class_percentile
+Lines,Dice,20,0.867,0.0194,0.8635,0.8589–0.8755,image_level_within_class_percentile
+Lines,IoU,20,0.7656,0.0304,0.7598,0.7529–0.7788,image_level_within_class_percentile
+Lines,Pixel precision,20,0.8732,0.0189,0.8715,0.8653–0.8813,image_level_within_class_percentile
+Lines,Pixel recall,20,0.8609,0.0203,0.858,0.8522–0.8696,image_level_within_class_percentile
+Lines,Specificity,20,0.9695,0.0287,0.9718,0.9555–0.9794,image_level_within_class_percentile
+Lines,Pixel accuracy,20,0.9528,0.0297,0.9518,0.9391–0.9647,image_level_within_class_percentile
+Mixed,Dice,10,0.7996,0.1502,0.849,0.7003–0.8562,image_level_within_class_percentile
+Mixed,IoU,10,0.6844,0.1621,0.7376,0.5785–0.7490,image_level_within_class_percentile
+Mixed,Pixel precision,10,0.8495,0.0259,0.855,0.8331–0.8636,image_level_within_class_percentile
+Mixed,Pixel recall,10,0.7818,0.19,0.843,0.6580–0.8501,image_level_within_class_percentile
+Mixed,Specificity,10,0.9569,0.0145,0.953,0.9486–0.9655,image_level_within_class_percentile
+Mixed,Pixel accuracy,10,0.9015,0.0991,0.9251,0.8360–0.9409,image_level_within_class_percentile

@@ -1,0 +1,24 @@
+Experiment 2 segmentation manifest audit
+========================================
+Manifest rows: 50
+Class counts: {'dots': 13, 'irregular': 7, 'lines': 20, 'mixed': 10}
+Validation problems: 0
+
+Selection:
+- The ZIP contains 52 original images.
+- The manifest uses the same 50-image primary set as Experiment 1.
+- Excluded from this manifest: dots/dot_12.png and mixed/Mixed_02.png.
+
+Verification:
+- All 50 selected image/ground-truth/predicted triplets exist.
+- All 50 selected triplets have matching dimensions.
+- All 50 ground-truth masks are exact 0/255 binary images.
+- All 50 predicted masks are exact 0/255 binary images.
+- Foreground convention: black = 0.
+- Background convention: white = 255.
+- Class labels and manual masks are recorded as externally verified.
+
+Files to remove from ground_truth_masks because they are copies of originals:
+- ground_truth_masks/irregular/irregular_06_mask.jpeg (exact copy of images/irregular/irregular_06.jpeg)
+- ground_truth_masks/mixed/mixed_06_mask.jpeg (exact copy of images/mixed/mixed_06.jpeg)
+- ground_truth_masks/mixed/mixed_08_mask.jpeg (exact copy of images/mixed/mixed_08.jpeg)

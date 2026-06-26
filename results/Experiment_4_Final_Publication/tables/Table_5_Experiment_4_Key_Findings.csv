@@ -1,0 +1,10 @@
+Result,Value,Interpretation
+Completed cases,6/6,All selected case studies executed successfully.
+Processing failures,0,No case terminated with a runtime error.
+Classification correctness,5/6,One intentional classification/routing failure case (lines_01) was retained.
+Route matches reference predictions,6/6,Fresh outputs matched the stored final routing decisions.
+Representative success cases,4,"Dots, lines, mixed, and irregular success workflows."
+Retained failure cases,2,Mixed_01 (segmentation failure) and lines_01 (classification/routing failure).
+Lowest Dice in Experiment 4,0.3766,Mixed_01 severe under-segmentation propagated into both downstream analyses.
+Highest Dice in Experiment 4,0.8870,lines_01 still had a strong segmentation mask despite incorrect routing.
+ColorWheel figure-label correction,Applied,Case panels were regenerated so case_01 and case_05 no longer mislabel Voronoi outputs as overlay/morphology maps.

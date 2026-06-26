@@ -1,0 +1,42 @@
+ColorWheel core-output preservation audit
+========================================
+
+Cases:
+7 predicted masks corresponding to the seven images whose original
+ColorWheel runs completed.
+
+Legacy module:
+<ORIGINAL_RUN_ROOT>\ColorWheel_Output_Preservation_Check\legacy_original\3.colorwheel_original.py
+
+Fixed module:
+<ORIGINAL_RUN_ROOT>\AFM_Web-main\3.colorwheel.py
+
+Controlled comparison:
+Both versions receive the same binary mask and the same global orientation
+origin. The ColorWheel and one-phase RGB maps are compared with SSIM, MAE,
+PSNR, and exact-pixel agreement.
+
+Controlled technical pass:
+- ColorWheel SSIM >= 0.995;
+- one-phase SSIM >= 0.995;
+- one-phase MAE <= 1 RGB intensity unit;
+- original and fixed dimensions equal the input dimensions; and
+- the fixed implementation creates all eight requested clusters.
+
+Native comparison:
+Each version uses its own orientation estimator. Native map similarity and the
+axial angle difference modulo 180 degrees are descriptive. They are not held
+to the controlled threshold because the optimized version intentionally
+corrected orientation estimation.
+
+Clustering interpretation:
+The original implementation silently hardcoded four clusters, whereas the
+fixed implementation honors the requested eight clusters. Exact cluster-map
+equivalence is therefore neither expected nor claimed. The fixed eight-cluster
+partition is saved for visual review, and cluster creation is checked
+structurally.
+
+Component interpretation:
+The original custom 16x16-neighborhood BFS was replaced by deterministic
+8-connected component analysis. This is an intentional behavior correction,
+not a speed-only equivalence claim.

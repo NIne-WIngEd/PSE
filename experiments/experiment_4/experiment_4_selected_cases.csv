@@ -1,0 +1,7 @@
+case_id,case_role,relative_path,true_label,reference_predicted_label,reference_confidence,reference_dice,reference_iou,expected_route,rationale
+case_01,Representative dots workflow,dots/dots_09.png,dots,dots,0.9993627667,0.8459258710,0.7329909317,voronoi,Image nearest the dots-class median Dice score; demonstrates the dots-to-Voronoi route.
+case_02,Representative lines workflow,lines/lines_03.png,lines,lines,0.9999998808,0.8620202066,0.7575004509,colorwheel,Image nearest the lines-class median Dice score; demonstrates the lines-to-ColorWheel route.
+case_03,Representative mixed workflow,mixed/Mixed_04.png,mixed,mixed,0.9343376756,0.8524669073,0.7428691275,voronoi+colorwheel,Image nearest the mixed-class median Dice score; demonstrates execution of both downstream modules.
+case_04,Representative irregular workflow,irregular/irregular_03.png,irregular,irregular,0.9443580508,0.8589790448,0.7528161871,none,Image nearest the irregular-class median Dice score; demonstrates intentional termination after segmentation.
+case_05,Segmentation failure case,mixed/Mixed_01.png,mixed,mixed,0.5398501158,0.3765503621,0.2319445909,voronoi+colorwheel,Lowest segmentation score in the validation set; demonstrates propagation of severe under-segmentation into downstream analysis.
+case_06,Classification and routing failure case,lines/lines_01.png,lines,irregular,0.9999997616,0.8869507534,0.7968656878,none,High-confidence line-to-irregular classification error; demonstrates how classification error suppresses the expected ColorWheel route.

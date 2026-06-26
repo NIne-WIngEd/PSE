@@ -1,0 +1,4 @@
+mask,status,runtime_seconds,original_width,original_height,processed_width,processed_height,num_clusters_requested,num_clusters_used,raw_mask_files,filtered_mask_files,grain_mask_files,orientation_angle,foreground_fraction,issues
+irregular_06_mask.png,passed,11.651834899996174,1254,1254,1254,1254,8,8,8,8,8,71.32042697951418,0.21731098443513452,
+lines_12_mask.png,passed,2.6596418999979505,446,456,446,456,8,8,8,8,8,70.03776562916688,0.10655141216269373,
+Mixed_03_mask.png,passed,1.4306090000027325,207,207,207,207,8,8,8,8,4,73.61568858398118,0.19972461434339192,

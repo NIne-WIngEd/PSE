@@ -1,0 +1,5 @@
+True class,Predicted Dots,Predicted Irregular,Predicted Lines,Predicted Mixed
+Dots,1.0,0.0,0.0,0.0
+Irregular,0.0,0.8571,0.1429,0.0
+Lines,0.0,0.05,0.9,0.05
+Mixed,0.0,0.0,0.2,0.8

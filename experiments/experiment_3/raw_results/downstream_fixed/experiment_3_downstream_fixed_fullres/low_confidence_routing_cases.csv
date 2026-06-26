@@ -1,0 +1,5 @@
+relative_path,true_label,predicted_label,routing,confidence,second_best_label,second_best_probability,confidence_margin,confidence_below_threshold,margin_below_threshold,confidence_threshold,margin_threshold
+irregular/irregular_06.jpeg,irregular,lines,colorwheel,0.5373424887657166,irregular,0.4625939428806305,0.07474854588508606,True,True,0.6,0.1
+mixed/Mixed_01.png,mixed,mixed,voronoi+colorwheel,0.539850115776062,dots,0.2988148331642151,0.24103528261184692,True,False,0.6,0.1
+mixed/Mixed_03.png,mixed,mixed,voronoi+colorwheel,0.5517905354499817,lines,0.4475152790546417,0.10427525639533997,True,False,0.6,0.1
+mixed/mixed_05.png,mixed,lines,colorwheel,0.5676323175430298,mixed,0.39179691672325134,0.17583540081977844,True,False,0.6,0.1

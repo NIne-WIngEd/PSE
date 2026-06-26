@@ -1,0 +1,56 @@
+Experiment 4 end-to-end case-study methodology
+================================================
+
+Purpose:
+Qualitatively demonstrate the complete final AFM analysis workflow and show how
+representative successes and retained failure cases propagate through
+prediction-dependent routing.
+
+Fixed cases:
+- representative dots: dots/dots_09.png
+- representative lines: lines/lines_03.png
+- representative mixed: mixed/Mixed_04.png
+- representative irregular: irregular/irregular_03.png
+- segmentation failure: mixed/Mixed_01.png
+- classification/routing failure: lines/lines_01.png
+
+Selection:
+The four representative cases were the images nearest the class-specific median
+Dice score in Experiment 2. Mixed_01 was the lowest segmentation score in the
+50-image set. lines_01 was retained because the CNN predicted irregular for a
+true line morphology with confidence greater than 0.9999.
+
+Pipeline:
+Original image -> CNN class prediction -> U-Net predicted mask -> route based on
+the fresh CNN prediction -> Voronoi and/or fixed full-resolution ColorWheel.
+
+Routing:
+- dots -> Voronoi
+- lines -> ColorWheel
+- mixed -> Voronoi + ColorWheel
+- irregular -> no downstream analysis
+
+Segmentation comparison:
+Externally verified manual masks were used only to create disagreement maps and
+recompute Dice and IoU for the case-study panels. They did not influence
+classification, segmentation, routing, or downstream analysis.
+
+Disagreement colors:
+- green = true-positive foreground
+- red = false-positive foreground
+- blue = false-negative foreground
+- black = true-negative background
+
+Downstream settings:
+- Voronoi threshold_edge = 0.025
+- Voronoi max_size = 1024
+- ColorWheel full-resolution output: max_dimension = 0
+- ColorWheel orientation_max_dimension = 1024
+- ColorWheel clusters = 8
+- ColorWheel max_fit_samples = 10000
+- ColorWheel min_component_size = 15
+
+Interpretation:
+Experiment 4 is a qualitative end-to-end software demonstration, not a new
+accuracy or runtime benchmark. Quantitative performance is reported in
+Experiments 1–3. No manual mask correction was introduced during these cases.

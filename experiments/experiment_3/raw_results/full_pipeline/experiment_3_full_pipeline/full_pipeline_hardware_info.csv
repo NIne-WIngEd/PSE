@@ -1,0 +1,2 @@
+timestamp_local,operating_system,machine,processor,cpu_physical_cores,cpu_logical_cores,ram_bytes,python_version,python_executable,pytorch_version,cuda_available,cuda_runtime_version,gpu_name,device_requested,device_used
+2026-06-25 00:10:15,Windows-11-10.0.26200-SP0,AMD64,"AMD64 Family 26 Model 36 Stepping 0, AuthenticAMD",10,20,29841813504,3.13.14,<ORIGINAL_RUN_ROOT>\venv\Scripts\python.exe,2.11.0+cpu,False,,,auto,cpu

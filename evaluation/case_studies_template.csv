@@ -1,5 +1,0 @@
-relative_path,true_label,case_name,include,edited_mask_path,image_size_micrometers,notes
-dots/dots_06.png,dots,Representative dot morphology,yes,,1.0,Illustrative case only
-lines/lines_17.png,lines,Representative line morphology,yes,,1.0,Illustrative case only
-mixed/Mixed_03.png,mixed,Representative mixed morphology,yes,,1.0,Illustrative case only
-irregular/irregular_03.png,irregular,Representative irregular morphology,yes,,1.0,Current app routes irregular predictions through the mixed analysis branch

@@ -1,0 +1,12 @@
+EXPERIMENT 2 — SUGGESTED FIGURE CAPTIONS
+========================================
+
+Figure Exp2-1. Overall segmentation performance across 50 externally verified AFM images. Points show image-level mean scores, and error bars indicate 95% class-stratified percentile bootstrap confidence intervals based on 10,000 image-level resamples. The mean Dice coefficient was 0.845, and the mean IoU was 0.737.
+
+Figure Exp2-2. Class-specific Dice and IoU performance for dot, line, mixed, and irregular AFM morphologies. Error bars show 95% within-class percentile bootstrap confidence intervals. Line morphologies achieved the highest mean Dice score, while mixed morphologies showed the greatest variability.
+
+Figure Exp2-3. Distribution of per-image Dice coefficients across morphology classes. Boxes indicate the interquartile range, center lines indicate the median, mean markers show the class mean, and individual points represent separate AFM images. The mixed class contains the widest performance range because of the low-performing Mixed_01 case.
+
+Figure Exp2-4. Representative segmentation results selected as the image nearest the median Dice score within each morphology class. Columns show the original AFM image, externally verified ground-truth mask, model-predicted mask, and pixel-level disagreement map. Green indicates true-positive foreground, red indicates false-positive foreground, blue indicates false-negative foreground, and black indicates true-negative background.
+
+Figure Exp2-5. Comparison of the strongest and weakest segmentation cases in the external validation set. The strongest case was lines_08 (Dice = 0.912; IoU = 0.838), while the lowest-performing case was Mixed_01 (Dice = 0.377; IoU = 0.232). The low-performing case demonstrates substantial under-segmentation and is retained to transparently report model limitations.

@@ -1,0 +1,1 @@
+The complete 50 externally verified manual ground-truth masks and 50 model-predicted masks are stored once at the repository root under masks/ground_truth and masks/predicted. The authoritative pairing and checksums are in masks/manifest.csv. Original AFM images are not redistributed.

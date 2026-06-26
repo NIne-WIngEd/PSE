@@ -1,0 +1,14 @@
+EXPERIMENT 3 — SUGGESTED FIGURE CAPTIONS
+========================================
+
+Figure Exp3-1. Neural startup and inference timing. Bars show median runtime and error bars show the interquartile range. Cold model-ready timing was measured across five fresh Python processes; warm measurements represent the distribution of per-image medians across the 50-image validation set. The logarithmic axis accommodates the difference between startup and warm inference times.
+
+Figure Exp3-2. Downstream component timing after ColorWheel optimization. Bars show the median and interquartile range across applicable images. The fixed full-resolution ColorWheel completed all 90 repetitions across 30 routed images, while Voronoi completed all 66 repetitions across 22 images.
+
+Figure Exp3-3. Direct complete-pipeline runtime by prediction-dependent route. Bars show the median and interquartile range for images routed to no downstream module, ColorWheel only, Voronoi only, or both downstream modules.
+
+Figure Exp3-4. Reproducibility of direct 50-image batch processing. Each point represents one complete warm batch repetition with models retained in memory. All three batches completed without image-level failure.
+
+Figure Exp3-5. ColorWheel image-level completion rate before and after optimization. The original implementation completed all repetitions for 7 of 29 routed images, whereas the fixed full-resolution implementation completed all repetitions for 30 of 30 routed images.
+
+Figure Exp3-6. ColorWheel core-output preservation. Controlled bars compare original and fixed one-phase maps generated with an identical orientation origin; SSIM was 1.000 for all seven cases. Native bars include the intended change introduced by the corrected orientation estimator and are therefore descriptive rather than an equivalence criterion.

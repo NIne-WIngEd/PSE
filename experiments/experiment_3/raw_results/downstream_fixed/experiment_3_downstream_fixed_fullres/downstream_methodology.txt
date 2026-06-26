@@ -1,0 +1,34 @@
+Experiment 3B robust downstream timing methodology
+====================================================
+
+Images: 50
+Repetitions per applicable image: 3
+Routing basis: finalized CNN predicted class
+- dots -> Voronoi
+- lines -> ColorWheel
+- mixed -> Voronoi + ColorWheel
+- irregular -> no downstream analysis
+
+Predicted masks were generated once before downstream timing, so U-Net runtime
+was excluded from this stage. One Voronoi and one ColorWheel warm-up call were
+run and discarded.
+
+Optimized ColorWheel settings:
+- maximum processed dimension: 0 (0 means original full resolution)
+- requested orientation clusters: 8
+- maximum clustering fit sample: 10000 foreground pixels
+- minimum connected-component size: 15 pixels
+- timeout: 120.0 seconds per ColorWheel call
+
+ColorWheel runs in an isolated Python worker. The worker reports analysis time
+from immediately before analyze_image() through output generation. Process
+startup/import latency is excluded from the principal analysis measurement but
+is retained separately as worker wall time. A timed-out worker is terminated,
+logged, and the experiment continues.
+
+Low-confidence routing is logged when CNN confidence is below
+0.60 or the top-two probability margin is below
+0.10. Low confidence does not alter routing; it is a
+separate audit flag.
+
+Mask-generation device: cpu

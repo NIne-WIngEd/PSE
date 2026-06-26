@@ -1,0 +1,55 @@
+EXPERIMENT 3B AUDIT REPORT
+===========================
+
+Run status
+----------
+The 49-image timing script completed and wrote all expected files.
+
+Routing
+-------
+- Voronoi only: 13 images
+- ColorWheel only: 20 images
+- Voronoi + ColorWheel: 9 images
+- No downstream stage: 7 images
+
+Voronoi
+-------
+- Applicable images: 22
+- Completed images: 22/22 (100%)
+- Completed repetitions: 66/66 (100%)
+- Corrected image-level mean: 13.629 s
+- Corrected image-level median: 13.722 s
+- Range: 2.690–26.537 s
+
+The original downstream_timing_summary.csv reports n=15 for Voronoi because it
+discarded successful Voronoi measurements whenever a later ColorWheel stage
+timed out. That is an aggregation error. The corrected Voronoi sample size is 22.
+
+Original ColorWheel
+-------------------
+- Routed images: 29
+- Images completing all three repetitions: 7/29 (24.1%)
+- Images timing out in all three repetitions: 22/29 (75.9%)
+- Successful repetitions: 21/87 (24.1%)
+- Timeout repetitions: 66/87 (75.9%)
+- All failures were 120-second TimeoutExpired events.
+
+Among only the seven cases that completed:
+- Mean: 58.816 s
+- Median: 36.919 s
+- Range: 22.603–100.545 s
+
+These completed-case ColorWheel times are censored and biased toward faster
+images. They must not be presented as representative of all ColorWheel-routed
+images.
+
+Publication interpretation
+--------------------------
+Voronoi timing is valid and publication-usable. The original ColorWheel does
+not have a valid general runtime estimate under this protocol because 75.9% of
+routed images failed to complete within 120 seconds. The completion rate and
+timeout rate are valid robustness/scalability results.
+
+The overall downstream totals in downstream_timing_summary.csv are not valid
+as a complete 49-image end-to-end average because they exclude 22 timed-out
+images.

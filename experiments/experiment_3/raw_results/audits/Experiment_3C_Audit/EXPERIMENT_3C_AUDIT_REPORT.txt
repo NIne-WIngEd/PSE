@@ -1,0 +1,70 @@
+EXPERIMENT 3C AUDIT REPORT
+===========================
+
+Overall result
+--------------
+Experiment 3C passed.
+
+- 50 images per batch
+- 3 complete batch repetitions
+- 150/150 image runs completed
+- 3/3 batches completed
+- 0 processing failures
+- 50/50 images reproduced the reviewed manifest prediction in every batch
+
+Direct batch performance
+------------------------
+Batch 1: 459.460 s
+Batch 2: 450.637 s
+Batch 3: 450.253 s
+
+Mean batch time: 453.450 s
+Median batch time: 450.637 s
+Median throughput: 6.657 images/min
+Mean direct batch time per image: 9.069 s
+Batch-time coefficient of variation: 1.15%
+
+Component medians
+-----------------
+Warm CNN: 89.866 ms
+Warm U-Net total: 301.892 ms
+Voronoi: 14.019 s
+Fixed full-resolution ColorWheel: 3.922 s
+Direct complete pipeline: 7.820 s
+
+Route-specific median complete-pipeline time
+--------------------------------------------
+Voronoi only: 15.260 s
+ColorWheel only: 4.331 s
+Voronoi + ColorWheel: 16.697 s
+No downstream route: 0.369 s
+
+Stability
+---------
+Median per-image repeat CV: 2.64%
+Mean per-image repeat CV: 3.03%
+Batch overhead was approximately 0.186 s per batch,
+less than 0.05% of total batch time.
+
+Low-confidence routing
+----------------------
+Four unique images were flagged:
+- irregular/irregular_06.jpeg
+- mixed/Mixed_01.png
+- mixed/Mixed_03.png
+- mixed/mixed_05.png
+
+The flags were reproduced identically in all three batches and did not cause
+runtime failures.
+
+Publication interpretation
+--------------------------
+The final fixed pipeline completed all full-resolution downstream analyses
+without failure. A complete 50-image batch required a median of
+7.51 minutes and processed
+6.66 images per minute on CPU-only hardware.
+
+The principal complete-pipeline per-image result is the median of
+7.82 s.
+Because routing differs by predicted morphology, route-specific medians should
+also be reported.

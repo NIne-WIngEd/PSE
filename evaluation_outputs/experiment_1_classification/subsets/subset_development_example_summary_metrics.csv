@@ -1,2 +1,0 @@
-evaluation_name,n_images,n_correct,accuracy,accuracy_95_ci_low_wilson,accuracy_95_ci_high_wilson,balanced_accuracy,macro_precision,macro_recall,macro_f1,weighted_precision,weighted_recall,weighted_f1,matthews_correlation_coefficient,cohen_kappa,mean_confidence,mean_confidence_correct,mean_confidence_incorrect,expected_calibration_error_10_bins
-subset_development_example,2,2,1.0,0.34238022750665303,1.0,1.0,0.5,0.5,0.5,1.0,1.0,1.0,1.0,1.0,0.9729473888874054,0.9729473888874054,,0.027052611112594604

@@ -1,0 +1,11 @@
+finding,value,unit,interpretation
+Included Experiment 3B images,49.0,images,One predeclared technical exclusion: irregular/irregular_06.jpeg.
+Images routed to Voronoi,22.0,images,All applicable Voronoi images completed all three repetitions.
+Successful Voronoi repetitions,66.0,runs,66 of 66 applicable Voronoi repetitions completed.
+Images routed to ColorWheel,29.0,images,Predicted lines plus predicted mixed images.
+ColorWheel images completing all repetitions,7.0,images,Only complete cases can contribute an uncensored runtime.
+ColorWheel images timing out in all repetitions,22.0,images,Original full-resolution ColorWheel exceeded 120 s in every repetition.
+Successful ColorWheel repetitions,21.0,runs,21 of 87 routed repetitions completed.
+ColorWheel timeout repetitions,66.0,runs,All recorded failures were TimeoutExpired.
+ColorWheel image completion rate,24.137931034482758,%,Completion rate at a 120 s per-run timeout.
+ColorWheel run completion rate,24.137931034482758,%,Run-level completion rate.

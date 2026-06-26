@@ -1,0 +1,41 @@
+EXPERIMENT 4 — METHODOLOGY BULLETS
+=================================
+
+Purpose
+• Experiment 4 is the final qualitative end-to-end software-validation experiment.
+• It demonstrates how the finalized AFM analysis application behaves on representative successes and retained failure cases.
+• It is not a new statistical accuracy benchmark; Experiments 1–3 contain the main quantitative evaluations.
+
+Case selection
+• Six fixed case studies were used.
+• Four cases were selected as representative examples nearest the class-specific median Dice score from Experiment 2.
+• The representative success cases were dots_09, lines_03, Mixed_04, and irregular_03.
+• Mixed_01 was retained as the worst segmentation case from Experiment 2.
+• lines_01 was retained as a high-confidence line-to-irregular classification error from Experiment 1.
+• No case was selected because it produced visually favorable downstream outputs.
+
+Pipeline execution
+• Each case was run through the final production workflow.
+• The workflow order was original image → CNN classification → U-Net segmentation → route-specific downstream analysis.
+• Dots were routed to Voronoi.
+• Lines were routed to ColorWheel.
+• Mixed images were routed to both Voronoi and ColorWheel.
+• Irregular images intentionally terminated after segmentation without downstream analysis.
+
+Ground truth and disagreement visualization
+• Externally verified manual ground-truth masks from Experiment 2 were used only for comparison and figure construction.
+• Ground-truth masks did not affect classification, segmentation, routing, or downstream output generation.
+• Each case figure contains a disagreement map.
+• In the disagreement maps, green denotes true-positive foreground, red denotes false-positive foreground, blue denotes false-negative foreground, and black denotes true-negative background.
+
+Label correction
+• The original Experiment 4 run completed successfully but two case panels mislabeled Voronoi outputs.
+• For case_01 and case_05, the Voronoi analysis produced original and snapshot PNG files but did not produce overlay or morphology-map PNG files.
+• The publication package regenerates the case panels with corrected labels using the existing output files only.
+• No model rerun was required for the label correction.
+
+Interpretation focus
+• The representative cases demonstrate intended workflow behavior for each morphology class.
+• Mixed_01 demonstrates propagation of severe under-segmentation into downstream analysis.
+• lines_01 demonstrates a classification-driven routing failure in which ColorWheel was suppressed.
+• Single-case runtimes shown in the tables are illustrative only; formal timing analysis remains in Experiment 3.

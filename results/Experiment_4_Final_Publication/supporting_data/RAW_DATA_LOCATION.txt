@@ -1,0 +1,7 @@
+The redacted Experiment 4 raw-output archive is stored once at:
+
+experiments/experiment_4/raw_results/experiment_4_end_to_end_results_redacted.zip
+
+It excludes the six raw AFM case-study images while retaining generated masks,
+probability plots, JSON/CSV summaries, disagreement maps, route notes, and
+Voronoi/ColorWheel downstream outputs.

@@ -1,0 +1,6 @@
+Component,Applicable images,Mean (s),SD (s),Median (s),IQR (s),Range (s),Completion
+Voronoi analysis,22,14.593,5.86,14.792,10.365–17.065,3.079–30.418,100%
+Fixed full-resolution ColorWheel,30,4.068,2.385,3.518,2.660–4.407,1.115–9.874,100%
+ColorWheel worker wall time,30,5.768,2.424,5.241,4.366–6.262,2.590–11.497,100%
+Downstream total among routed images,43,10.306,8.122,7.86,3.518–15.965,1.346–40.127,100%
+Downstream total across all images,50,8.863,8.342,7.304,2.660–15.422,0.000–40.127,100%

@@ -1,0 +1,7 @@
+Case ID,Image,CNN time (ms),U-Net time (ms),Voronoi time (ms),ColorWheel time (ms),Full pipeline time (ms),Timing note
+case_01,dots/dots_09.png,730.71,547.59,19601.77,,21902.11,Illustrative single-case runtime only; formal runtime benchmarking is reported in Experiment 3.
+case_02,lines/lines_03.png,86.68,200.04,,2980.32,3590.54,Illustrative single-case runtime only; formal runtime benchmarking is reported in Experiment 3.
+case_03,mixed/Mixed_04.png,74.27,201.21,6216.3,1176.31,7967.57,Illustrative single-case runtime only; formal runtime benchmarking is reported in Experiment 3.
+case_04,irregular/irregular_03.png,89.07,209.39,,,651.54,Illustrative single-case runtime only; formal runtime benchmarking is reported in Experiment 3.
+case_05,mixed/Mixed_01.png,82.71,292.12,14086.02,3345.38,18151.84,Illustrative single-case runtime only; formal runtime benchmarking is reported in Experiment 3.
+case_06,lines/lines_01.png,88.02,210.74,,,675.37,Illustrative single-case runtime only; formal runtime benchmarking is reported in Experiment 3.

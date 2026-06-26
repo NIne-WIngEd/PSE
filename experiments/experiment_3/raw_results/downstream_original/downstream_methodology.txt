@@ -1,0 +1,44 @@
+Experiment 3B downstream timing — original pipeline
+===================================================
+
+Included images:
+49
+
+Manifest:
+<ORIGINAL_RUN_ROOT>\cnn_predictions_primary_reviewed_exp3_49.csv
+
+Excluded case:
+irregular/irregular_06.jpeg was excluded from Experiment 3B downstream runtime
+only because the original full-resolution ColorWheel did not complete within
+15 minutes on that 1254 x 1254 low-confidence misrouted image. It remains in
+Experiments 1 and 2.
+
+Code:
+The repository's original app.py and 3.colorwheel.py were preserved. No image
+resizing, K-means replacement, or connected-component optimization was applied.
+
+Timeout:
+Every original ColorWheel repetition ran in an isolated Python subprocess with
+a 120.0-second timeout. A timeout was recorded
+as a technical failure and the experiment continued.
+
+Repetitions:
+3 per applicable included image.
+
+Routing:
+- predicted dots -> Voronoi
+- predicted lines -> ColorWheel
+- predicted mixed -> Voronoi + ColorWheel
+- predicted irregular -> no downstream analysis
+
+Mask generation:
+Predicted U-Net masks were generated once before downstream timing. Their
+generation time is excluded because neural timing was measured in Experiment
+3A.
+
+Important limitation:
+The original ColorWheel implementation calls KMeans on all image pixels, uses
+large Python pixel/BFS loops, and internally hardcodes four color masks despite
+receiving num_clusters=8. Therefore, downstream timing is conditional on cases
+that finish within the timeout. Report the excluded case and any additional
+timeouts transparently.

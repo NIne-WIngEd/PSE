@@ -1,0 +1,17 @@
+class,metric,support,estimate,ci_lower,ci_upper,confidence_level,method,bootstrap_iterations,bootstrap_seed
+dots,precision,13,1.0,1.0,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+dots,recall,13,1.0,1.0,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+dots,specificity,13,1.0,1.0,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+dots,f1,13,1.0,1.0,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+irregular,precision,7,0.8571428571428571,0.625,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+irregular,recall,7,0.8571428571428571,0.5714285714285714,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+irregular,specificity,7,0.9767441860465116,0.9302325581395349,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+irregular,f1,7,0.8571428571428571,0.6153846153846153,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+lines,precision,20,0.8571428571428571,0.7307692307692307,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+lines,recall,20,0.9,0.75,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+lines,specificity,20,0.9,0.8,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+lines,f1,20,0.8780487804878048,0.7692307692307692,0.9743589743589743,0.95,class_stratified_percentile_bootstrap,10000,20260622
+mixed,precision,10,0.8888888888888888,0.7,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+mixed,recall,10,0.8,0.5,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+mixed,specificity,10,0.975,0.925,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622
+mixed,f1,10,0.8421052631578948,0.625,1.0,0.95,class_stratified_percentile_bootstrap,10000,20260622

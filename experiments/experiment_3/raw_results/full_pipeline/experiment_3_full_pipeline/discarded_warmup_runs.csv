@@ -1,0 +1,5 @@
+relative_path,manifest_predicted_label,runtime_predicted_label,routing,full_pipeline_ms
+dots/dot_01.png,dots,dots,voronoi,15598.41740000411
+irregular/irregular_06.jpeg,lines,lines,colorwheel,10034.003499997198
+lines/lines_18.png,mixed,mixed,voronoi+colorwheel,13162.270599990734
+irregular/irregular_01.png,irregular,irregular,none,567.3118999984581

@@ -1,0 +1,7 @@
+case_id,case_role,relative_path,true_label,fresh_predicted_label,classification_correct,fresh_confidence,executed_route,route_matches_reference,recomputed_dice,recomputed_iou,voronoi_status,colorwheel_status,figure_label_note,full_pipeline_ms
+case_01,Representative dots workflow,dots/dots_09.png,dots,dots,True,0.999363,voronoi,True,0.845926,0.732991,completed,not_applicable,Corrected panel uses Voronoi original/snapshot labels.,21902.11
+case_02,Representative lines workflow,lines/lines_03.png,lines,lines,True,1.0,colorwheel,True,0.86202,0.7575,not_applicable,completed,No figure-label correction required.,3590.542
+case_03,Representative mixed workflow,mixed/Mixed_04.png,mixed,mixed,True,0.934338,voronoi+colorwheel,True,0.852467,0.742869,completed,completed,No figure-label correction required.,7967.568
+case_04,Representative irregular workflow,irregular/irregular_03.png,irregular,irregular,True,0.944358,none,True,0.858979,0.752816,not_applicable,not_applicable,No figure-label correction required.,651.539
+case_05,Segmentation failure case,mixed/Mixed_01.png,mixed,mixed,True,0.53985,voronoi+colorwheel,True,0.37655,0.231945,completed,completed,Corrected panel uses Voronoi original/snapshot labels.,18151.84
+case_06,Classification and routing failure case,lines/lines_01.png,lines,irregular,False,1.0,none,True,0.886951,0.796866,not_applicable,not_applicable,No figure-label correction required.,675.365
