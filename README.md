@@ -250,7 +250,7 @@ Generated files are stored under `runtime/` by default.
 ```text
 AFM_Morphology_Analysis_GitHub/
 ├── backend/                 Flask API and production analysis modules
-├── frontend/                Next.js and TypeScript user interface
+├── frontend/                Next.js and TypeScript user interface, npm config, and Node version hint
 ├── models/                  Trained CNN and U-Net checkpoints
 ├── training/                Reconstructed compatible training scripts
 ├── experiments/             Reproduction scripts and raw experiment outputs
@@ -307,11 +307,13 @@ git lfs ls-files
 ### Prerequisites
 
 - Python 3.13.x for the tested CPU environment
-- Node.js 22.16.0
-- npm 10.9.2
+- Node.js 22 LTS recommended for the frontend
+- npm 10.x recommended for the frontend
 - Git LFS
 - Windows, Linux, or macOS
 - Optional CUDA-compatible GPU for accelerated PyTorch inference
+
+The frontend includes `frontend/.nvmrc` and `frontend/.npmrc` to make cross-system setup more consistent. The `.nvmrc` file indicates the recommended Node.js major version, and `.npmrc` explicitly points npm to the public npm registry.
 
 ### Python environment
 
@@ -344,12 +346,59 @@ A convenience dependency file is also available at `requirements.txt`. Use the l
 
 ### Frontend dependencies
 
+From the repository root:
+
 ```bash
 cd frontend
+npm install
+```
+
+For strict lockfile-based installation, `npm ci` can also be used when supported by the local Node/npm version:
+
+```bash
 npm ci
 ```
 
+The frontend is intended to be installed from the public npm registry. The expected registry is:
+
+```text
+https://registry.npmjs.org/
+```
+
+You can confirm this with:
+
+```bash
+npm config get registry
+```
+
 The frontend uses local and system fonts. Its production build does not depend on downloading Google Fonts.
+
+---
+
+## Frontend Node.js troubleshooting
+
+The frontend is recommended to run with Node.js 22 LTS and npm 10.x. Very new Node/npm combinations may occasionally produce npm-internal installation errors such as:
+
+```text
+npm error Exit handler never called!
+```
+
+If this occurs, switch to Node.js 22 LTS, remove `node_modules`, and reinstall with `npm install` from the `frontend` directory:
+
+```bash
+cd frontend
+npm install
+npm run build
+```
+
+On systems using `nvm`, run the following from the `frontend` directory:
+
+```bash
+nvm use
+npm install
+```
+
+On Windows, use a Node version manager such as nvm-windows or install Node.js 22 LTS directly.
 
 ---
 
@@ -591,10 +640,12 @@ Validate the frontend:
 
 ```bash
 cd frontend
-npm ci
+npm install
 npm run lint
 npm run build
 ```
+
+For strict lockfile-based verification, `npm ci` may be used instead of `npm install` when supported by the local Node/npm version.
 
 The verification workflow checks:
 
