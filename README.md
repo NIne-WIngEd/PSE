@@ -605,9 +605,11 @@ Experiment 2 masks and Experiment 3 raw outputs are stored as first-class reposi
 
 ---
 
-## Training-code provenance
+## Training-code provenance and checkpoint verification
 
-The exact historical CNN and U-Net training scripts were lost before the reviewer repository was assembled. To avoid misrepresenting reconstructed code as the original training source, the repository includes compatible reference trainers with explicit provenance boundaries:
+The exact historical CNN and U-Net training scripts used to produce the submitted model weights were not preserved before the reviewer repository was assembled. To avoid misrepresenting reconstructed files as the original training source, this repository explicitly separates the submitted inference artifacts from the reconstructed training utilities.
+
+The submitted model checkpoints, inference code, masks, evaluation scripts, raw results, and validation tables are included so that the reported validation results can be reproduced without retraining. The reconstructed training scripts are provided as compatible reference trainers for future model development and for verifying the model/checkpoint interface:
 
 ```text
 training/train_cnn_reconstructed.py
@@ -616,13 +618,40 @@ training/CHECKPOINT_PROVENANCE.md
 training/checkpoint_provenance.json
 ```
 
-The reconstructed scripts reproduce the final architectures, input contracts, class ordering, checkpoint formats, and all recoverable checkpoint metadata. They are suitable for compatible future training on an authorized dataset, but they are **not claimed to regenerate the submitted weights bit-for-bit**.
+The reconstructed scripts preserve the production model architectures, input contracts, class ordering, checkpoint formats, and all recoverable checkpoint metadata. They are suitable for compatible future training on an authorized dataset. They are not claimed to regenerate the submitted weights bit-for-bit or to replace the lost historical training scripts.
 
-The included weights, inference code, masks, evaluation scripts, and raw results reproduce the reported validation results without retraining.
+### Checkpoint compatibility verification
+
+Checkpoint compatibility was verified against the actual submitted model files from the repository root:
+
+```powershell
+python training/train_cnn_reconstructed.py --verify-checkpoint models/cnn_rgb_classifier.pth --device cpu
+python training/train_unet_reconstructed.py --verify-checkpoint models/best_quality_unet.pt --device cpu
+```
+
+Verification output:
+
+```text
+CNN checkpoint verification passed
+path: C:\PSE\models\cnn_rgb_classifier.pth
+sha256: dd309d7d0d6706f34b762b396b4142e2586f4859d27f5cb409b9093156bba256
+output shape: (1, 4)
+
+U-Net checkpoint verification passed
+path: C:\PSE\models\best_quality_unet.pt
+sha256: 18ecdf3b3c35408a467d0e7baab781dbdb88572a87c907c14f4ad01884b1be41
+model_config: {"base_channels": 48, "img_size": 256, "in_channels": 1, "kernel_size": 3, "model_type": "BalancedUNet", "num_classes": 1, "num_convs_per_block": 2}
+training_config: {"batch_size": 8, "epochs": 100, "img_size": 256, "learning_rate": 5e-05, "loss_alpha": 0.2, "loss_beta": 0.8, "loss_function": "CombinedLoss", "optimizer": "AdamW", "weight_decay": 0.001}
+output shape: (1, 1, 256, 256)
+```
+
+These checks confirm that the reconstructed scripts are compatible with the submitted CNN and U-Net checkpoint formats. They verify checkpoint loading, architecture recovery, stored configuration recovery, and expected inference-output shapes. They do not claim bit-identical regeneration of the original trained weights.
 
 ---
 
 ## Repository verification
+
+The repository includes verification utilities for checking code integrity, model artifacts, evaluation materials, backend behavior, and frontend build status.
 
 Run the repository-integrity checks:
 
@@ -650,6 +679,7 @@ For strict lockfile-based verification, `npm ci` may be used instead of `npm ins
 The verification workflow checks:
 
 - model-file hashes
+- submitted checkpoint compatibility
 - manual and predicted mask counts and hashes
 - Python source compilation
 - absence of stale cache and build artifacts
@@ -671,8 +701,6 @@ A SHA-256 file manifest is available in:
 ```text
 FILE_MANIFEST.sha256
 ```
-
----
 
 ## Data availability
 
