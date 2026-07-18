@@ -716,8 +716,6 @@ FILE_MANIFEST.sha256
 
 ## Data availability
 
-The original AFM training and validation images are not redistributed because the repository does not establish redistribution permission for every source image.
-
 The public repository includes:
 
 - trained model checkpoints
@@ -748,7 +746,6 @@ docs/DATA_AVAILABILITY.md
 - Binary overlap metrics do not fully measure boundary quality, topology, or downstream scientific error.
 - CNN confidence is descriptive and was not established as a clinical or safety-critical uncertainty measure.
 - The reconstructed trainers are compatible implementations, not the exact lost historical training scripts.
-- The public repository does not contain the original AFM images.
 
 ---
 
