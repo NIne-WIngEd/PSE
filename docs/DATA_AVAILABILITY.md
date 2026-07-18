@@ -16,4 +16,10 @@ The evaluation scripts accept an authorized local image directory. Reviewers who
 
 ## Training-source availability
 
-The exact historical CNN and U-Net training programs were not recoverable. Compatible reconstructed trainers and a machine-readable checkpoint-provenance record are included under `training/`. This limitation does not affect reproduction of the submitted predictions, validation metrics, timing results, or publication figures from the preserved final weights and raw evaluation outputs.
+Data availability
+
+A legally redistributable 50-image AFM benchmark/evaluation dataset is archived on Zenodo at https://doi.org/10.5281/zenodo.21422891. The archive contains validation AFM images, classification labels, manual segmentation masks, predicted segmentation masks, externally verified record manifests, segmentation-metric tables, SHA-256 file hashes, and verification scripts needed to inspect and re-evaluate the reported classification and segmentation results.
+
+The finalized benchmark contains 13 dot, 7 irregular, 20 line, and 10 mixed AFM images. The segmentation masks use a binary convention in which foreground pixels have value 0 and background pixels have value 255. The supplied metric script follows this convention and reproduces the reported Experiment 2 means: Dice = 0.845, IoU = 0.737, precision = 0.858, recall = 0.839, specificity = 0.959, and pixel accuracy = 0.934.
+
+The original historical training dataset used during model development was not preserved. Therefore, retraining-based reproduction of the submitted checkpoints and historical train/test leakage assessment are not claimed. The repository provides the submitted checkpoints, inference code, evaluation scripts, raw machine-readable outputs, reconstructed compatible training scripts, and checkpoint-verification logs to support checkpoint-level reproducibility and benchmark-level validation.
