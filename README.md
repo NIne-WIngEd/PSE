@@ -496,6 +496,18 @@ These files are generated during use and are excluded from version control. They
 
 ---
 
+## Benchmark evaluation dataset
+
+A legally redistributable 50-image AFM benchmark/evaluation dataset is archived on Zenodo:
+
+**DOI:** https://doi.org/10.5281/zenodo.21422891
+
+The dataset includes AFM validation images, classification labels, manual segmentation masks, predicted segmentation masks, externally verified segmentation manifests, segmentation metrics, SHA-256 hashes, and verification scripts. The benchmark contains 13 dot, 7 irregular, 20 line, and 10 mixed AFM images.
+
+The segmentation masks use a binary convention in which foreground pixels have value 0 and background pixels have value 255. The supplied metric script follows this convention and reproduces the reported Experiment 2 means: Dice = 0.845, IoU = 0.737, precision = 0.858, recall = 0.839, specificity = 0.959, and pixel accuracy = 0.934.
+
+The original historical training dataset used during model development was not preserved, so full retraining reproduction of the submitted checkpoints and historical train/test leakage assessment are not claimed. The released benchmark supports independent inspection and re-evaluation of the reported classification and segmentation validation results.
+
 ## Validation study
 
 This repository accompanies a four-part software-validation study.
